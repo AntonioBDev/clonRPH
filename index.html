@@ -31,8 +31,8 @@
               Diseña, Construye o Remodela tu espacio
             </h1>
             <div class="hero-btn">
-              <a href="#" class="btn btn-naranjado">Nuestros servicios</a>
-              <a href="#" class="btn btn-transparente">Contacto</a>
+              <a href="#" class="btn btn-naranjado w-30">Nuestros servicios</a>
+              <a href="#" class="btn btn-transparente w-30">Contacto</a>
             </div>
             <!--hero-btn-->
           </div>
@@ -94,23 +94,62 @@
       </div><!--hero-ubicacion-->
     </section><!--ubicacion-->
 
-    <section class="section-proyectos">
-      <h2>Nuestros Proyectos</h2>
+    <section class="section-proyectos margin-bottom">
+      <h2 class="container">Nuestros Proyectos</h2>
       <div class="proyectos">
         <div class="proyecto img-1">
-
+          <div class="bg-proyecto">
+            <h3>Villa Stone</h3>
+            <p>Las conchas, Puerto Peñasco.</p>
+          </div>
         </div><!--proyecto-->
         <div class="proyecto img-2">
-
+          <div class="bg-proyecto">
+            <h3>Casa Kosh</h3>
+            <p>Las conchas, Puerto Peñasco.</p>
+          </div>
         </div><!--proyecto-->
         <div class="proyecto img-3">
-
+          <div class="bg-proyecto">
+            <h3>Villa pescador</h3>
+            <p>El puerto, Puerto Peñasco.</p>
+          </div>
         </div><!--proyecto-->
         <div class="proyecto img-4">
-
+          <div class="bg-proyecto">
+            <h3>Casa san martino</h3>
+            <p>Playa miramar, Puerto Peñasco.</p>
+          </div>
         </div><!--proyecto-->
       </div><!--proyectos-->
+      <div class="container btn__servicio-flex">
+        <a href="#" class="btn btn-naranjado">Ver proyectos<img src="src/img/herramientas/flecha.png" alt=""></a>
+      </div>
     </section><!--section-proyectos-->
+
+    <section class="section-form">
+      <form action="https://formsubmit.co/basi.dev9@gmail.com" method="post" class="formulario">
+        <fieldset>
+          <legend>Háblanos Sobre tu Proyecto</legend>
+          <p>Solicita tu presupuesto</p>
+          <div class="campos">
+            <div class="campo">
+              <input type="text" name="text" placeholder="Nombre completo">
+            </div>
+            <div class="campo">
+              <input type="email" name="email" placeholder="Correo electronico">
+            </div>
+            <div class="campo">
+              <input type="text" name="asunto" placeholder="Asunto">
+            </div>
+            <div class="campo">
+              <textarea name="mensaje" id="" placeholder="Mensaje"></textarea>
+            </div>
+          </div>
+          <input type="submit" value="Enviar" class="btn btn-naranjado">
+        </fieldset>
+      </form>
+    </section>
     
     <footer class="footer">
        <p> Copyright © 2025 Rocky Point Home Builders Mx.</p>
