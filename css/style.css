@@ -25,12 +25,21 @@ body{
 }
 /*Globales*/
 h1,h2,h3,p{margin: 0;}
-h1{font-size: 6em;}
+h1{font-size: 4em;}
 h2{font-size: 3.8rem;}
 h3{font-size: 3.2rem;}
 a{text-decoration: none;}
 img{width: 100%;}
+li{
+  list-style-type: none;
+   line-height: 1.5;
+}
 
+@media screen and (min-width:768px){
+    h1{font-size: 6em;}
+    h2{font-size: 3.8rem;}
+    h3{font-size: 3.2rem;}
+}
 /*Utilidades*/
 .container{
     width: 95%;
@@ -45,6 +54,7 @@ img{width: 100%;}
     padding: 1rem 2rem;
     display: inline-block;
     text-align: center;
+    margin: auto 0;
     font-weight: 800;
     text-transform: uppercase;
     cursor: pointer;
@@ -87,50 +97,81 @@ img{width: 100%;}
     width: 20rem;
 }
 
-.menu-icono{
-    width: 3rem;
-    height: 3rem;
-}
-
-.menu-icono:hover{
-    cursor: pointer;
-}
-
 @media  screen and (min-width:768px){
     .logo{
         flex-direction: column;
          align-items:normal;
     }
-    .menu-icono{
-        display: none;
-    }
 }
 
 /*navegacion*/
-.navegacion{
-   display: none;
+.logo{
+    position: relative;
 }
 
-@media  screen and (min-width:768px){
-    .navegacion{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    }
+.menu__icono-movil{
+    width: 3rem;
+    height: 3rem;
+}
+
+.menu__icono-movil:hover{
+    cursor: pointer;
+}
+
+.lista-enlaces{
+   display: none; 
 }
 
 .enlace{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
-    color: white;
+    color: var(--c-black);
 }
 
 .activo, 
 .enlace:hover{
     color: var(--color-primary-oscuro);
 }
+
+/* Movil */
+@media screen and (max-width:767px) {
+    .navegacion:hover > .contenido-menu {
+        position: absolute;
+        z-index: 1;
+        min-width: 300px;
+        padding: 1rem 2rem;
+        height: auto;  
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: var(--c-white);
+        text-align: center;
+    }
+
+    .navegacion:hover .contenido-menu > .lista-enlaces{
+        display: inline-block;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width:768px){
+    .lista-enlaces{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    }
+
+    .menu__icono-movil{
+        display: none;
+    }
+
+    .enlace{
+        color: var(--c-white);
+    }
+}
+
 
 /*Info header*/
 .info-hero{
@@ -159,7 +200,12 @@ img{width: 100%;}
 .hero-btn{
     margin-top: 2rem;
     display: flex;
+    flex-direction: column;
     gap: 5rem;
+}
+
+.d-block{
+    display: inline-block;
 }
 
 .btn-naranjado{
@@ -179,19 +225,42 @@ img{width: 100%;}
 
 .btn-transparente:hover{
     background-color: var(--color-primary-oscuro);
-    border: none;
+    border: 1px solid var(--color-primary-oscuro);
     color: var(--c-black);
 }
 
-.section-servicios{
-    padding-top: 2rem;
+@media screen and (min-width:768px){
+    .hero-btn{
+        flex-direction: row;
+    }
 }
 /*servicios*/
+.section-servicios{
+    padding-top: 5rem;
+}
 .servicios{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem 0;
+    margin: 3rem 0;
+}
+
+/* Tablet */
+@media (min-width:768px) {
+  .servicios{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem  2rem;
     margin-top: 3rem;
+    }
+}
+
+/* Desktop */
+@media (min-width:1280px) {
+  .servicios{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem  2rem;
+    margin-top: 3rem;
+    }
 }
 
 .servicio{
@@ -234,7 +303,7 @@ img{width: 100%;}
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 567px;
+    /* width: 567px; */
     height: 320px;
     position: relative;
 }
@@ -262,13 +331,21 @@ img{width: 100%;}
 }
 
 /*proyectos*/
-.section-proyectos h2{
-    margin-bottom: 2rem;
+.section-proyectos{
+    margin: 5rem 0;
 }
 .proyectos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem 0rem;
     margin-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+  .proyectos{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 1rem;
+}
 }
 
 .img-1{background-image: url(../src/img/proyectos/1.png);}
