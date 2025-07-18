@@ -7,52 +7,86 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylevideo.css">
   </head>
   <body>
     <header class="header">
-      <div class="hero">
-        <div class="contenido-hero container height-100">
-          <div class="logo flex">
-            <img class="img-logo" src="src/img/logo/logo.png" alt="" />
-
-            <!--Responsive movil-->
-            <nav class="navegacion">
-              <img class="menu__icono-movil" src="src/img/menu/menu.png" alt="" />
-            <div class="contenido-menu">
-              <ul class="lista-enlaces no-margin no-padding">
-                <li><a href="index.html" class="enlace">Inicio</a></li>
-                <li><a href="proyectos.html" class="enlace">Proyectos</a></li>
-                <li><a href="servicios.html" class="enlace">Servicios</a></li>
-                <li><a href="nosotros.html" class="enlace">Nosotros</a></li>
-                <li><a href="contacto.html" class="enlace activo">Contacto</a></li>
-              </ul>
+      <div class="video">
+        <div class="overlay bg-header">
+          <div class="contenido-video container">
+            <div class="logo flex">
+              <img class="img-logo" src="src/img/logo/logo.png" alt="" />
+              <!--Responsive movil-->
+              <nav class="navegacion">
+                <img
+                  class="menu__icono-movil"
+                  src="src/img/menu/menu.png"
+                  alt=""
+                />
+                <div class="contenido-menu">
+                  <ul class="lista-enlaces no-margin no-padding">
+                    <li><a href="index.html" class="enlace">Inicio</a></li>
+                    <li><a href="proyectos.html" class="enlace">Proyectos</a></li>
+                    <li><a href="servicios.html" class="enlace">Servicios</a></li>
+                    <li><a href="nosotros.html" class="enlace">Nosotros</a></li>
+                    <li><a href="contacto.html" class="enlace activo">Contacto</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <!--navegacion-->
             </div>
-            </nav>
-            <!--navegacion-->
-          </div>
-          <!--logo-->
-          <div class="info-hero">
-            <p class="info-descripcion">Has realidad tus sueños</p>
-            <h1 class="no-margin info-titulo">
-              Diseña, Construye o Remodela tu espacio
-            </h1>
-            <!-- Botones-->
-            <div class="hero-btn">
-              <a href="#" class="btn btn-naranjado d-iblock">Nuestros servicios</a>
-              <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+            <!--logo-->
+            <div class="info-hero">
+              <h1 class="no-margin info-titulo text-center c-white">Contacto</h1>
+              <!-- Botones-->
+              <div class="hero-btn d-fc">
+                <a href="#" class="btn btn-naranjado d-iblock"
+                  >Nuestros servicios</a
+                >
+                <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+              </div>
+              <!--hero-btn-->
             </div>
-            <!--hero-btn-->
+            <!--info-hero-->
           </div>
-          <!--info-hero-->
         </div>
-        <!--contenido-hero-->
+        <!--overlay-->
+        <video autoplay muted loop>
+          <source src="src/video/hero/presentacion.mp4" type="video/mp4" />
+          <source src="src/video/hero/presentacion.ogv" type="video/ogv" />
+          <source
+            src="src/video/hero/presentacion.webm"
+            type="video/webp"
+          /></video
+        ><!--video-->
       </div>
-      <!--hero-->
-    </header><!--header-->
+      <!--class-video-->
+    </header>
+    <!--header-->
 
     <main class="contenido-principal">
-      <section class="container section-servicios">
-        <h2>Contacto</h2>
+      <section class="container section-servicios p-top">
+        <h2 class="text-center m-tb-3">Nuestra oficina</h2>
+        <div class="detalles-contacto">
+          <h3 class="text-center b-b-2">Detalles de contacto</h3>
+          <div class="datos">
+            <h4 class="no-margin no-padding">Direccinón:</h4>
+            <p>Ave. Tecla Viuda De Bustamante Entre Rio Mayo Y Rio Fuerte #308. Col. Luis Donaldo Colosio.</p>
+          </div>
+           <div class="datos">
+            <h4 class="no-margin no-padding">Email:</h4>
+            <p>rockypointhomebuilders@hotmail.com</p>
+            <p>ventas@rockypointhomebuildersmx.com</p>
+          </div>
+           <div class="datos">
+            <h4 class="no-margin no-padding">Teléfono:</h4>
+            <p>+52 (638) 386 4621</p>
+          </div>
+        </div>
+        <div class="map p-top b-b-2">
+          <h3 class="text-center m-tb-3">Ubicacion</h3>
+          <iframe class="container" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33547.664710484045!2d-113.526521!3d31.330911!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x812ba5fdef59ad4d%3A0xb67c6ffc97969c6f!2sRocky%20Point%20Home%20Builders%20Mx!5e1!3m2!1ses!2smx!4v1752815159567!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
       <!--section-->
     </main><!--contenido-principal-->

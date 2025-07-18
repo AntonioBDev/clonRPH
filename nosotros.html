@@ -7,52 +7,105 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylevideo.css">
   </head>
   <body>
     <header class="header">
-      <div class="hero">
-        <div class="contenido-hero container height-100">
-          <div class="logo flex">
-            <img class="img-logo" src="src/img/logo/logo.png" alt="" />
-
-            <!--Responsive movil-->
-            <nav class="navegacion">
-              <img class="menu__icono-movil" src="src/img/menu/menu.png" alt="" />
-            <div class="contenido-menu">
-              <ul class="lista-enlaces no-margin no-padding">
-                <li><a href="index.html" class="enlace ">Inicio</a></li>
-                <li><a href="proyectos.html" class="enlace">Proyectos</a></li>
-                <li><a href="servicios.html" class="enlace">Servicios</a></li>
-                <li><a href="nosotros.html" class="enlace activo">Nosotros</a></li>
-                <li><a href="contacto.html" class="enlace">Contacto</a></li>
-              </ul>
+      <div class="video">
+        <div class="overlay bg-header">
+          <div class="contenido-video container">
+            <div class="logo flex">
+              <img class="img-logo" src="src/img/logo/logo.png" alt="" />
+              <!--Responsive movil-->
+              <nav class="navegacion">
+                <img
+                  class="menu__icono-movil"
+                  src="src/img/menu/menu.png"
+                  alt=""
+                />
+                <div class="contenido-menu">
+                  <ul class="lista-enlaces no-margin no-padding">
+                    <li><a href="index.html" class="enlace">Inicio</a></li>
+                    <li><a href="proyectos.html" class="enlace">Proyectos</a></li>
+                    <li><a href="servicios.html" class="enlace">Servicios</a></li>
+                    <li><a href="nosotros.html" class="enlace activo">Nosotros</a></li>
+                    <li><a href="contacto.html" class="enlace">Contacto</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <!--navegacion-->
             </div>
-            </nav>
-            <!--navegacion-->
-          </div>
-          <!--logo-->
-          <div class="info-hero">
-            <p class="info-descripcion">Has realidad tus sueños</p>
-            <h1 class="no-margin info-titulo">
-              Diseña, Construye o Remodela tu espacio
-            </h1>
-            <!-- Botones-->
-            <div class="hero-btn">
-              <a href="#" class="btn btn-naranjado d-iblock">Nuestros servicios</a>
-              <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+            <!--logo-->
+            <div class="info-hero">
+              <h1 class="no-margin info-titulo text-center c-white">Nosotros</h1>
+              <!-- Botones-->
+              <div class="hero-btn d-fc">
+                <a href="#" class="btn btn-naranjado d-iblock"
+                  >Nuestros servicios</a
+                >
+                <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+              </div>
+              <!--hero-btn-->
             </div>
-            <!--hero-btn-->
+            <!--info-hero-->
           </div>
-          <!--info-hero-->
         </div>
-        <!--contenido-hero-->
+        <!--overlay-->
+        <video autoplay muted loop>
+          <source src="src/video/hero/presentacion.mp4" type="video/mp4" />
+          <source src="src/video/hero/presentacion.ogv" type="video/ogv" />
+          <source
+            src="src/video/hero/presentacion.webm"
+            type="video/webp"
+          /></video
+        ><!--video-->
       </div>
-      <!--hero-->
-    </header><!--header-->
+      <!--class-video-->
+    </header>
+    <!--header-->
 
     <main class="contenido-principal">
-      <section class="container section-servicios">
-        <h2>Nosotros</h2>
+      <section class="container section-servicios b-b-2">
+        <h2 class="b-b-2 p-top">Acerca de nosotros</h2>
+        <div class="contenido-nosotros m-tb-3">
+          <div class="info">
+            <div class="info-descripcion c-black">
+              <p>Somos una empresa constructora con mas de 15 años de experiencia, llevando de la mano a nuestros clientes en todo el proceso, desde el diseño, obtener todos los permisos legales y posteriormente llevar a cabo la construcción de la casa de su sueños.</p>
+              <p>Sabemos que contar con una propiedad en Puerto Peñasco es el sueño de muchos que buscamos el sol, la playa y un pedacito de azul.</p>
+              <p>Estamos comprometidos con entregar un trabajo de calidad, para que su experiencia sea de lo mas placentera, recuerden nuestro lema “First class or no class”.</p>
+            </div>
+            <a href="#" class="btn btn-naranjado d-iblock">Nuestros servicios</a>
+          </div>
+          <div class="tipos-servicios">
+            <div class="tipo-servicio diseno">
+              <div class="icono">
+                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M336 0C362.5 0 384 21.49 384 48V464C384 490.5 362.5 512 336 512H240V432C240 405.5 218.5 384 192 384C165.5 384 144 405.5 144 432V512H48C21.49 512 0 490.5 0 464V48C0 21.49 21.49 0 48 0H336zM64 272C64 280.8 71.16 288 80 288H112C120.8 288 128 280.8 128 272V240C128 231.2 120.8 224 112 224H80C71.16 224 64 231.2 64 240V272zM176 224C167.2 224 160 231.2 160 240V272C160 280.8 167.2 288 176 288H208C216.8 288 224 280.8 224 272V240C224 231.2 216.8 224 208 224H176zM256 272C256 280.8 263.2 288 272 288H304C312.8 288 320 280.8 320 272V240C320 231.2 312.8 224 304 224H272C263.2 224 256 231.2 256 240V272zM80 96C71.16 96 64 103.2 64 112V144C64 152.8 71.16 160 80 160H112C120.8 160 128 152.8 128 144V112C128 103.2 120.8 96 112 96H80zM160 144C160 152.8 167.2 160 176 160H208C216.8 160 224 152.8 224 144V112C224 103.2 216.8 96 208 96H176C167.2 96 160 103.2 160 112V144zM272 96C263.2 96 256 103.2 256 112V144C256 152.8 263.2 160 272 160H304C312.8 160 320 152.8 320 144V112C320 103.2 312.8 96 304 96H272z"></path></svg>
+              </div>
+               <div class="flex-servicio">
+                <h3>Diseño</h3>
+                <p>Contamos con un equipo de arquitectos para hacer cualquier tipo de diseño.</p>
+              </div>
+            </div>
+            <div class="tipo-servicio construccion">
+              <div class="icono">
+                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M240.1 4.216C249.1-1.405 262-1.405 271.9 4.216L443.6 102.4L447.1 104V104.9L495.9 132.2C508.5 139.4 514.6 154.2 510.9 168.2C507.2 182.2 494.5 192 479.1 192H31.1C17.49 192 4.795 182.2 1.071 168.2C-2.653 154.2 3.524 139.4 16.12 132.2L63.1 104.9V104L68.37 102.4L240.1 4.216zM64 224H128V416H168V224H232V416H280V224H344V416H384V224H448V420.3C448.6 420.6 449.2 420.1 449.8 421.4L497.8 453.4C509.5 461.2 514.7 475.8 510.6 489.3C506.5 502.8 494.1 512 480 512H32C17.9 512 5.46 502.8 1.373 489.3C-2.713 475.8 2.517 461.2 14.25 453.4L62.25 421.4C62.82 420.1 63.41 420.6 64 420.3V224z"></path></svg>
+              </div>
+              <div class="flex-servicio">
+                <h3>Construcción​</h3>
+                <p>Contamos con un equipo de ingenieros calificados para llevar a cabo la ejecución de la obra.</p>
+              </div>
+            </div>
+            <div class="tipo-servicio remodelacion">
+              <div class="icono">
+                <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.6 483.2 483.9 512 448.5 512H128.1C92.75 512 64.09 483.3 64.09 448V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5H575.8zM288 160C252.7 160 224 188.7 224 224C224 259.3 252.7 288 288 288C323.3 288 352 259.3 352 224C352 188.7 323.3 160 288 160zM256 320C211.8 320 176 355.8 176 400C176 408.8 183.2 416 192 416H384C392.8 416 400 408.8 400 400C400 355.8 364.2 320 320 320H256z"></path></svg>
+              </div>
+              <div class="flex-servicio">
+                <h3>Remodelacion​</h3>
+                <p>Contamos con un equipo de personal calificado para llevar a cabo cualquier tipo de remodelación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--section-->
     </main><!--contenido-principal-->
