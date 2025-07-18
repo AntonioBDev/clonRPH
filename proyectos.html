@@ -3,68 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocky Point Home Builders | Inicio</title>
+    <title>Rocky Point Home Builders | Proyectos</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico">
+    <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylevideo.css" />
   </head>
   <body>
     <header class="header">
-      <div class="hero">
-        <div class="contenido-hero container height-100">
-          <div class="logo flex">
-            <img class="img-logo" src="src/img/logo/logo.png" alt="" />
-
-            <!--Responsive movil-->
-            <nav class="navegacion">
-              <img class="menu__icono-movil" src="src/img/menu/menu.png" alt="" />
-            <div class="contenido-menu">
-              <ul class="lista-enlaces no-margin no-padding">
-                <li><a href="index.html" class="enlace">Inicio</a></li>
-                <li><a href="proyectos.html" class="enlace activo">Proyectos</a></li>
-                <li><a href="servicios.html" class="enlace">Servicios</a></li>
-                <li><a href="nosotros.html" class="enlace">Nosotros</a></li>
-                <li><a href="contacto.html" class="enlace">Contacto</a></li>
-              </ul>
+      <div class="video">
+        <div class="overlay bg-header">
+          <div class="contenido-video container">
+            <div class="logo flex">
+              <img class="img-logo" src="src/img/logo/logo.png" alt="" />
+              <!--Responsive movil-->
+              <nav class="navegacion">
+                <img
+                  class="menu__icono-movil"
+                  src="src/img/menu/menu.png"
+                  alt=""
+                />
+                <div class="contenido-menu">
+                  <ul class="lista-enlaces no-margin no-padding">
+                    <li><a href="index.html" class="enlace">Inicio</a></li>
+                    <li>
+                      <a href="proyectos.html" class="enlace activo"
+                        >Proyectos</a
+                      >
+                    </li>
+                    <li>
+                      <a href="servicios.html" class="enlace">Servicios</a>
+                    </li>
+                    <li><a href="nosotros.html" class="enlace">Nosotros</a></li>
+                    <li><a href="contacto.html" class="enlace">Contacto</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <!--navegacion-->
             </div>
-            </nav>
-            <!--navegacion-->
-          </div>
-          <!--logo-->
-          <div class="info-hero">
-            <p class="info-descripcion">Has realidad tus sueños</p>
-            <h1 class="no-margin info-titulo">
-              Diseña, Construye o Remodela tu espacio
-            </h1>
-            <!-- Botones-->
-            <div class="hero-btn">
-              <a href="#" class="btn btn-naranjado d-iblock">Nuestros servicios</a>
-              <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+            <!--logo-->
+            <div class="info-hero">
+              <h1 class="no-margin info-titulo text-center">Proyectos</h1>
+              <!-- Botones-->
+              <div class="hero-btn d-fc">
+                <a href="#" class="btn btn-naranjado d-iblock"
+                  >Nuestros servicios</a
+                >
+                <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+              </div>
+              <!--hero-btn-->
             </div>
-            <!--hero-btn-->
+            <!--info-hero-->
           </div>
-          <!--info-hero-->
         </div>
-        <!--contenido-hero-->
+        <!--overlay-->
+        <video autoplay muted loop>
+          <source src="src/video/hero/presentacion.mp4" type="video/mp4" />
+          <source src="src/video/hero/presentacion.ogv" type="video/ogv" />
+          <source
+            src="src/video/hero/presentacion.webm"
+            type="video/webp"
+          /></video
+        ><!--video-->
       </div>
-      <!--hero-->
-    </header><!--header-->
+      <!--class-video-->
+    </header>
+    <!--header-->
 
     <main class="contenido-principal">
-      <section class="container section-servicios">
-        <h2>Proyectos</h2>
+      <section class="container section-proyectos p-top">
+        <h2 class="container no-margin no-padding text-center text-tc">
+          Nuestros proyectos
+        </h2>
+        <div class="proyectos grid-template-columns--proyectos m-tb-3">
+          <div class="proyecto img-1">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa villa stone</h3>
+              <p>Las conchas, Puerto Peñasco.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-2">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa Kosh</h3>
+              <p>Las conchas, Puerto Peñasco.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-3">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Villa pescador</h3>
+              <p>El puerto, Puerto Peñasco.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-4">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Residencia del Mar</h3>
+              <p>Islas del mar, Puerto Peñasco Sonora.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-5">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa Blanca</h3>
+              <p>Islas del mar, Puerto Peñasco Sonora.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-6">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Residencia San Martino</h3>
+              <p>Playa Miramar, Puerto Peñasco Sonora.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-7">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa la choya</h3>
+              <p>Bahía la choya, Puerto Peñasco.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-8">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Residencia mandoki</h3>
+              <p>Las conchas. Puerto Peñasco.</p>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-9">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Residencia gentille</h3>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-10">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa bolzer</h3>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-11">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa Paloma</h3>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-12">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa Bravo</h3>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-13">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa Sueño</h3>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-14">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Residencial San Besitos</h3>
+            </div>
+          </div>
+          <!--proyecto-->
+          <div class="proyecto img-15">
+            <div class="bg-proyecto">
+              <h3 class="no-margin no-padding">Casa Encanto</h3>
+            </div>
+          </div>
+          <!--proyecto-->
+        </div>
+        <!--proyectos-->
       </section>
       <!--section-->
-    </main><!--contenido-principal-->
-    
+    </main>
+    <!--contenido-principal-->
+
     <footer class="footer">
       <div class="container f-footer">
-        <p> Copyright © 2025 Rocky Point Home Builders Mx.</p>
+        <p>Copyright © 2025 Rocky Point Home Builders Mx.</p>
         <div class="icono-redes">
-         <a href="https://www.facebook.com/people/Rocky-Point-Home-Builders-Mx/61574000968490/?mibextid=wwXIfr&rdid=cglYWPc4mIj2lsnV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sci3NpDS%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/img/redes/facebook.svg" alt="Icono de facebook" loading="lazy"></a>
-         <a href="tel:+526383864621"><img src="src/img/redes/tel.png" alt="Icono de telefono" loading="lazy"></a>
-        </div><!--iconos-redes-->
+          <a
+            href="https://www.facebook.com/people/Rocky-Point-Home-Builders-Mx/61574000968490/?mibextid=wwXIfr&rdid=cglYWPc4mIj2lsnV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sci3NpDS%2F%3Fmibextid%3DwwXIfr"
+            target="_blank"
+            ><img
+              src="src/img/redes/facebook.svg"
+              alt="Icono de facebook"
+              loading="lazy"
+          /></a>
+          <a href="tel:+526383864621"
+            ><img
+              src="src/img/redes/tel.png"
+              alt="Icono de telefono"
+              loading="lazy"
+          /></a>
+        </div>
+        <!--iconos-redes-->
       </div>
-    </footer><!--footer-->
+    </footer>
+    <!--footer-->
   </body>
 </html>
