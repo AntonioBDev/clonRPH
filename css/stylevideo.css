@@ -1,0 +1,30 @@
+.video{
+    position: relative;
+    min-height: 20rem;
+    max-height: 60rem;
+    /* overflow: hidden; */
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+video{
+    display: block;
+    width: auto; 
+    min-height: 20rem;
+    max-height: 40rem;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media (min-width:768px) {
+  video{
+    width: 100%;
+    min-height: 20rem;
+    max-height: 60rem;
+    object-fit: cover;
+  }
+}

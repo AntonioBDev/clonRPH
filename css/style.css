@@ -71,13 +71,7 @@ li{
     font-family: var(--fonts-second);
 }
 
-.w-30{
-    width: 30rem;
-}
-
-.margin-bottom{
-    margin-bottom: 5rem;
-}
+.w-30{width: 30rem;}
 
 .bg{
     position: absolute;
@@ -86,17 +80,28 @@ li{
     bottom: 0;
     left: 0;
 }
-
+.p-top{padding-top: 5rem;}
+.m-b-5{margin-bottom: 5rem;}
+.m-tb-3{margin: 3rem 0;}
+.text-center{text-align: center;}
+.text-tc{text-transform: capitalize;}
+.d-fc{
+    display: flex;
+    justify-content: center;
+}
 
 
 /*Header*/
 .hero{
-    background-image: url(../src/img/hero/hero.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 90rem;
     position: relative;
+}
+
+.hero__img-header{
+     background-image: url(../src/img/hero/hero.jpg);
 }
 
 .bg-header{
@@ -260,14 +265,10 @@ li{
     }
 }
 /*servicios*/
-.section-servicios{
-    padding-top: 5rem;
-}
 .servicios{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 5rem 0;
-    margin: 3rem 0;
 }
 
 /* Tablet */
@@ -275,7 +276,6 @@ li{
   .servicios{
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem  2rem;
-    margin-top: 3rem;
     }
 }
 
@@ -284,7 +284,6 @@ li{
   .servicios{
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem  2rem;
-    margin-top: 3rem;
     }
 }
 
@@ -301,7 +300,7 @@ li{
 
 .btn__servicio-flex{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .btn__servicio-flex a{
@@ -320,7 +319,7 @@ li{
 .ubicacion{
     width: 100%;
     max-width: 60rem;
-    margin: 5rem auto;
+    margin: 2rem auto;
 }
 
 .hero-ubicacion{
@@ -354,27 +353,37 @@ li{
 }
 
 /*proyectos*/
-.section-proyectos{
-    margin: 5rem 0;
-}
 .proyectos{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem 0rem;
+    gap: 1rem 1rem;
     margin-bottom: 2rem;
 }
 
+.grid-template-columns{
+    grid-template-columns: repeat(1, 1fr);
+}
+
 @media (min-width:768px) {
-  .proyectos{
+  .grid-template-columns{
     grid-template-columns: repeat(4, 1fr);
-    gap: 0 1rem;
 }
 }
 
 .img-1{background-image: url(../src/img/proyectos/1.png);}
 .img-2{background-image: url(../src/img/proyectos/2.jpg);}
 .img-3{background-image: url(../src/img/proyectos/3.jpg);}
-.img-4{background-image: url(../src/img/proyectos/4.png);}
+.img-4{background-image: url(../src/img/proyectos/proyectoshtml/residencia_del_mar.jpg);}
+.img-5{background-image: url(../src/img/proyectos/proyectoshtml/casa_blanca.jpg);}
+.img-6{background-image: url(../src/img/proyectos/proyectoshtml/residencia_san_martino.png);}
+.img-7{background-image: url(../src/img/proyectos/proyectoshtml/casa_la_choya.png);}
+.img-8{background-image: url(../src/img/proyectos/proyectoshtml/residencia_mandoki.png);}
+.img-9{background-image: url(../src/img/proyectos/proyectoshtml/residencia_gentille.png);}
+.img-10{background-image: url(../src/img/proyectos/proyectoshtml/casa_bolzer.jpg);}
+.img-11{background-image: url(../src/img/proyectos/proyectoshtml/casa_paloma.png);}
+.img-12{background-image: url(../src/img/proyectos/proyectoshtml/casa_bravo.png);}
+.img-13{background-image: url(../src/img/proyectos/proyectoshtml/casa_sueno.png);}
+.img-14{background-image: url(../src/img/proyectos/proyectoshtml/residencia_san_besitos.png);}
+.img-15{background-image: url(../src/img/proyectos/proyectoshtml/casa_encanto.jpg);}
 
 .proyecto{
     background-repeat: no-repeat;
@@ -382,6 +391,10 @@ li{
     background-size: cover;
     height: 45rem;
     position: relative;
+}
+
+.bg-proyecto h3{
+    text-transform: capitalize;
 }
 
 .bg-proyecto h3, .bg-proyecto p{
@@ -404,8 +417,8 @@ li{
     justify-content: end;
     padding: 0 0 3rem 2rem;
     background: linear-gradient(to top, /* Dirección del degradado: de abajo hacia arriba */
-    rgba(0, 0, 0, 0.7) 0%,   /* Empieza más oscuro en la parte inferior (80% de opacidad) */
-    rgba(0, 0, 0, 0.3) 50%,  /* Menos oscuro a la mitad (40% de opacidad) */
+    rgba(0, 0, 0, 0.6) 0%,   /* Empieza más oscuro en la parte inferior (80% de opacidad) */
+    rgba(0, 0, 0, 0.1) 50%,  /* Menos oscuro a la mitad (40% de opacidad) */
     rgba(0, 0, 0, 0) 100%    /* Completamente transparente en la parte superior */
   );
 }
@@ -492,7 +505,7 @@ footer{
 }
 
 .icono-redes a img{
-    height: 40px;
+    height: 30px;
     width: auto;
 }
 
@@ -506,6 +519,19 @@ footer{
   .icono-redes{
     gap: 3rem;
 }
+}
+
+
+/*Sección Proyectos*/
+@media (min-width:768px) {
+   .grid-template-columns--proyectos{
+    grid-template-columns: repeat(2,1fr);
+   }
+}
+@media (min-width:1280px) {
+    .grid-template-columns--proyectos{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
