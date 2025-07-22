@@ -13,7 +13,7 @@
 
 video{
     display: block;
-    width: auto; 
+    width: 100%; 
     min-height: 20rem;
     max-height: 40rem;
     object-fit: cover;

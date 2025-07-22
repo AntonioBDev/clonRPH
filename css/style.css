@@ -373,7 +373,7 @@ li .activo{
 }
 
 /*proyectos*/
-.proyectos{
+.proyectos, .servicios{
     display: grid;
     gap: 1rem 1rem;
     margin-bottom: 2rem;
