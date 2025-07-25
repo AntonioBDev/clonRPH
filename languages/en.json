@@ -1,0 +1,45 @@
+{
+    "navigation":{
+        "home":"Home",
+        "projects":"Projects",
+        "services":"Services",
+        "about-us": "About us",
+        "our-contact":"Our Contact" 
+    },
+    "header":{
+        "title":"Design, build or remodel your space",
+        "text":"Make your dreams come true",
+        "button-services":"Our services",
+        "button-contact":"Contact us"
+    },
+    "services":{
+        "title":"Professional services",
+        "text-1":"Remodeling",
+        "text-2":"Construction",      
+        "text-3":"Design",
+        "text-4":"Material handling",
+        "text-5":"Electrical and plumbing installations",      
+        "text-6":"Qualified personnel management",
+        "button":"View services",  
+        "img":"src/img/herramientas/flecha.png"  
+    },
+    "location":{
+        "title":"Where we are located?",
+        "button":"Find us"
+    },
+    "projects":{
+        "title":"Our projects",
+        "button":"View projects"
+    },
+    "form":{
+        "title":"We talked about your project",
+        "text":"Request your quote",
+        "fields":{
+            "field-1":"Name",
+            "field-2":"Email",
+            "field-3":"Subject",
+            "field-4":"Message"
+        },
+        "button":"To send"
+    }
+}

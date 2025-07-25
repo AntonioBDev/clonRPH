@@ -140,6 +140,7 @@ svg{
 
 /*Logo*/
 .logo{
+    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,6 +158,29 @@ svg{
          align-items:normal;
     }
 }
+
+/*Languages*/
+select{
+    background-color: var(--color-primary-oscuro);
+    color: var(--c-black);
+    font-weight: 800;
+    font-size: 1rem;
+    padding: .2rem .5rem;
+}
+
+option{
+    background-color: var(--c-black);
+    color: var(--color-primary);
+    font-weight: 600;
+}
+.languages{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+/* .languages a img{
+    width: 25px;
+} */
 
 /*navegacion*/
 .logo{

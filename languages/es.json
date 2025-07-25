@@ -1,0 +1,46 @@
+{
+    "navigation":{
+        "home":"Inicio",
+        "projects":"Proyectos",
+        "services":"Servicios",
+        "about-us": "Nosotros",
+        "our-contact":"Contacto" 
+    },
+    "header":{
+        "title":"Diseña, construye o remodela tu espacio",
+        "text":"Has realidad tus sueños",
+        "button-services":"Nuestros servicios",
+        "button-contact":"Contacto"
+    },
+    "services":{
+        "title":"Servicios profesionales",
+        "text-services":{
+            "text-1":"Remodelaciones",
+            "text-2":"Construcción",      
+            "text-3":"Diseño",
+            "text-4":"Manejo de materiales",
+            "text-5":"Instalaciones eléctricas e hidrosanitarias",      
+            "text-6":"Manejo de personal calificado"  
+        },
+        "button":"Ver servicios"    
+    },
+    "location":{
+        "title":"Donde nos ubicamos",
+        "button":"Buscanos"
+    },
+    "projects":{
+        "title":"Nuestros proyectos",
+        "button":"Ver proyectos"
+    },
+    "form":{
+        "title":"Háblanos sobre tu proyecto",
+        "text":"Solicita tu presupuesto",
+        "fields":{
+            "field-1":"Nombre completo",
+            "field-2":"Correo electronico",
+            "field-3":"Asunto",
+            "field-4":"Mensaje"
+        },
+        "button":"enviar"
+    }
+}
