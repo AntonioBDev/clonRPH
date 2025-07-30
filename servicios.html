@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocky Point Home Builders | Inicio</title>
+    <title>Rocky Point Home Builders | Servicios</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico">
     <link rel="stylesheet" href="css/style.css" />
@@ -21,11 +21,11 @@
               <img class="menu__icono-movil" src="src/img/menu/menu.png" alt="" />
               <div class="contenido-menu">
                 <ul class="lista-enlaces no-margin no-padding">
-                  <li><a href="index.html" class="enlace" data-section="navigation" data-value="home">Inicio</a></li>
-                  <li><a href="proyectos.html" class="enlace" data-section="navigation" data-value="projects">Proyectos</a></li>
-                  <li><a href="servicios.html" class="enlace activo" data-section="navigation" data-value="services">Servicios</a></li>
-                  <li><a href="nosotros.html" class="enlace" data-section="navigation" data-value="about-us">Nosotros</a></li>
-                  <li><a href="contacto.html" class="enlace" data-section="navigation" data-value="our-contact">Contacto</a></li>
+                  <li><a href="index.html" class="enlace" data-section="navigation" data-value="home" data-section="navigation" data-value="home">Inicio</a></li>
+                  <li><a href="proyectos.html" class="enlace" data-section="navigation" data-value="projects" data-section="navigation" data-value="projects">Proyectos</a></li>
+                  <li><a href="servicios.html" class="enlace activo" data-section="navigation" data-value="services" data-section="navigation" data-value="services">Servicios</a></li>
+                  <li><a href="nosotros.html" class="enlace" data-section="navigation" data-value="about-us" data-section="navigation" data-value="about-us">Nosotros</a></li>
+                  <li><a href="contacto.html" class="enlace" data-section="navigation" data-value="our-contact" data-section="navigation" data-value="our-contact">Contacto</a></li>
                 </ul>
               </div>
               </nav>
@@ -33,7 +33,7 @@
             </div>
             <!--logo-->
             <div class="info-hero">
-              <h1 class="no-margin info-titulo text-center c-white">Servicios</h1>
+              <h1 class="no-margin info-titulo text-center c-white" data-section="services" data-value="header">Servicios</h1>
               <!-- Botones-->
               <!-- <div class="hero-btn d-fc">
                 <a href="#" class="btn btn-naranjado d-iblock"
@@ -62,7 +62,7 @@
 
     <main class="contenido-principal">
       <section class="container section-servicios b-b-2 p-top">
-        <h2 class="b-b-2 text-center">Servicios</h2>
+        <h2 class="b-b-2 text-center" data-section="services" data-value="header">Servicios</h2>
         <div class="servicios m-tb-3">
           <div class="servicio">
             <img src="src/img/galeria/servicios/s1.png"  loading="lazy" alt="">
@@ -164,6 +164,16 @@
       </section>
       <!--section-->
     </main><!--contenido-principal-->
+
+     <div class="languages container">
+      <select name="" id="languages" class="languages">
+        <option value="es" data-language="es">🇲🇽 Español</option>
+        <option value="en" data-language="en">🇺🇸 English</option>
+      </select>
+      <!-- <a href="#" data-language="en"><img src="src/img/lenguaje/en_US.png" alt="Icono US"></a>
+      <a href="#" data-language="es"><img src="src/img/lenguaje/en_MX.png" alt="Icono US"></a> -->
+    </div>
+    <!--languages-->
     
     <footer class="footer">
       <div class="container f-footer">

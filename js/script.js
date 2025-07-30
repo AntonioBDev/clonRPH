@@ -1,10 +1,17 @@
 // variables 
-const btnLanguage = document.querySelectorAll("select [data-language]");
-const textToChange = document.querySelectorAll("[data-section]")
+// const btnLanguage = document.querySelectorAll("select option [data-language]");
+const btnSelectLanguage = document.querySelector('#languages');
+const textToChange = document.querySelectorAll("[data-section]");
 document.addEventListener("DOMContentLoaded",()=> {
-    btnLanguage.forEach(button =>{
-        button.addEventListener("click", ()=>{
-            fetch(`../languages/${button.dataset.language}.json`)
+
+    //Valor del elemento OPTION del SELECT
+     btnSelectLanguage.addEventListener('change', (e)=>{
+        const language = e.target.value;
+        traducir(language);
+    })
+  
+    function traducir(language){
+         fetch(`../languages/${language}.json`)
                 .then(res => res.json())
                 .then(data => {
                     textToChange.forEach(atribute =>{
@@ -12,8 +19,7 @@ document.addEventListener("DOMContentLoaded",()=> {
                         const value = atribute.dataset.value;
 
                         atribute.innerHTML = data[section][value];
-                    })
                 })
-        });
-    })
+            })
+    }
 })

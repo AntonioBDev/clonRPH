@@ -120,17 +120,7 @@
       </div>
       <!--hero-->
     </header>
-    <!--header-->
-
-    <div class="languages container">
-      <select name="" id="" class="languages">
-        <option value="" data-language="es">🇲🇽 Español</option>
-        <option value="" data-language="en">🇺🇸 English</option>
-      </select>
-      <!-- <a href="#" data-language="en"><img src="src/img/lenguaje/en_US.png" alt="Icono US"></a>
-      <a href="#" data-language="es"><img src="src/img/lenguaje/en_MX.png" alt="Icono US"></a> -->
-    </div>
-    <!--languages-->
+    <!--header--> 
 
     <main class="contenido-principal">
       <section class="container section-servicios p-top">
@@ -225,8 +215,8 @@
             data-section="services"
             data-value="button"
             >Ver servicios
-            <img loading="lazy" src="src/img/herramientas/flecha.png" alt=""
-          /></a>
+            <!-- <img loading="lazy" src="src/img/herramientas/flecha.png" alt=""/> -->
+        </a>
         </div>
       </section>
       <!--section-->
@@ -254,7 +244,7 @@
     <!--ubicacion-->
 
     <section class="section-proyectos p-top m-tb-3">
-      <h2 class="container text-center">Nuestros Proyectos</h2>
+      <h2 class="container text-center" data-section="projects" data-value="title">Nuestros Proyectos</h2>
       <div class="proyectos grid-template-columns m-tb-3">
         <div class="proyecto img-1">
           <div class="bg-proyecto">
@@ -288,11 +278,9 @@
       <!--proyectos-->
       <div class="container btn__servicio-flex">
         <a href="proyectos.html" class="btn btn-naranjado"
-          >Ver proyectos<img
-            loading="lazy"
-            src="src/img/herramientas/flecha.png"
-            alt=""
-        /></a>
+           data-section="projects" data-value="button">Ver proyectos
+          <!-- <img loading="lazy" src="src/img/herramientas/flecha.png" alt=""/> -->
+          </a>
       </div>
     </section>
     <!--section-proyectos-->
@@ -304,22 +292,20 @@
         class="formulario"
       >
         <fieldset>
-          <legend>Háblanos Sobre tu Proyecto</legend>
-          <p>Solicita tu presupuesto</p>
+          <legend data-section="form" data-value="title">Háblanos Sobre tu Proyecto</legend>
+          <p data-section="form" data-value="text">Solicita tu presupuesto</p>
           <div class="campos">
             <div class="campo">
               <input
                 type="text"
                 name="Nombre Completo"
-                placeholder="Nombre completo"
-              />
+                placeholder="Nombre completo" />
             </div>
             <div class="campo">
               <input
                 type="email"
                 name="Correo"
-                placeholder="Correo electronico"
-              />
+                placeholder="Correo electronico"/>
             </div>
             <div class="campo">
               <input type="text" name="Asunto" placeholder="Asunto" />
@@ -335,6 +321,16 @@
       </form>
     </section>
     <!--formulario-->
+
+     <div class="languages container">
+      <select name="" id="languages" class="languages">
+        <option value="es" data-language="es">🇲🇽 Español</option>
+        <option value="en" data-language="en">🇺🇸 English</option>
+      </select>
+      <!-- <a href="#" data-language="en"><img src="src/img/lenguaje/en_US.png" alt="Icono US"></a>
+      <a href="#" data-language="es"><img src="src/img/lenguaje/en_MX.png" alt="Icono US"></a> -->
+    </div>
+    <!--languages-->
 
     <footer class="footer">
       <div class="container f-footer">
@@ -361,5 +357,6 @@
     <!--footer-->
 
     <script src="js/script.js"></script>
+     <!-- <script src="js/lenaguje.js"></script> -->
   </body>
 </html>

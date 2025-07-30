@@ -13,6 +13,7 @@
         "button-contact":"Contact us"
     },
     "services":{
+        "header":"Services",
         "title":"Professional services",
         "text-1":"Remodeling",
         "text-2":"Construction",      
@@ -20,6 +21,24 @@
         "text-4":"Material handling",
         "text-5":"Electrical and plumbing installations",      
         "text-6":"Qualified personnel management",
+        "text-7":"Remodeling",
+        "text-8":"Construction",      
+        "text-9":"Design",
+        "text-10":"Material handling",
+        "text-11":"Electrical and plumbing installations",      
+        "text-12":"Qualified personnel management",
+        "text-13":"Remodeling",
+        "text-14":"Construction",      
+        "text-15":"Design",
+        "text-16":"Material handling",
+        "text-17":"Electrical and plumbing installations",      
+        "text-18":"Qualified personnel management",
+        "text-19":"Remodeling",
+        "text-20":"Construction",      
+        "text-21":"Design",
+        "text-22":"Material handling",
+        "text-23":"Electrical and plumbing installations",      
+        "text-24":"Qualified personnel management",
         "button":"View services",  
         "img":"src/img/herramientas/flecha.png"  
     },
@@ -28,18 +47,17 @@
         "button":"Find us"
     },
     "projects":{
+        "header":"Projects",
         "title":"Our projects",
         "button":"View projects"
     },
     "form":{
         "title":"We talked about your project",
         "text":"Request your quote",
-        "fields":{
-            "field-1":"Name",
-            "field-2":"Email",
-            "field-3":"Subject",
-            "field-4":"Message"
-        },
+        "field-1":"Name",
+        "field-2":"Email",
+        "field-3":"Subject",
+        "field-4":"Message",
         "button":"To send"
     }
 }
