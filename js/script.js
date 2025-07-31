@@ -1,6 +1,7 @@
 // variables 
 // const btnLanguage = document.querySelectorAll("select option [data-language]");
 const btnSelectLanguage = document.querySelector('#languages');
+
 const textToChange = document.querySelectorAll("[data-section]");
 document.addEventListener("DOMContentLoaded",()=> {
 

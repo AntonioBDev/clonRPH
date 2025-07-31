@@ -2,6 +2,7 @@
 
 // Obtiene el idioma guardado en localStorage o usa 'es' como predeterminado
 const userLanguage = localStorage.getItem('language') || 'es';
+
 let translations = {}; // Objeto para almacenar las traducciones cargadas
 
 // Función para cargar el archivo JSON del idioma seleccionado
