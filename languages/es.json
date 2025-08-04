@@ -72,5 +72,12 @@
         "info-2":"Contamos con un equipo de ingenieros calificados para llevar a cabo la ejecución de la obra.",
         "sub-title-3":"Remodelación",
         "info-3":"Contamos con un equipo de personal calificado para llevar a cabo cualquier tipo de remodelación."
+    },
+    "contact":{
+        "title":"Nuestra oficina",
+        "sub-title-1":"Detalles de contacto", 
+        "text-1":"Dirección", 
+        "text-3":"Teléfono",
+        "sub-title-2":"Ubicación"
     }
 }

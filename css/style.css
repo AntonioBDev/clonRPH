@@ -661,6 +661,7 @@ footer{
     font-size: 2rem;
     font-family: var(--fonts-second);
     color: var(--c-gris);
+    overflow-wrap: break-word
 }
 
 

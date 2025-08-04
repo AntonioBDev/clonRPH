@@ -71,5 +71,12 @@
         "info-2":"We have a team of qualified engineers to carry out the execution of the work.",
         "sub-title-3":"Remodeling",
         "info-3":"We have a team of qualified personnel to carry out any type of remodeling."
+    },
+    "contact":{
+        "title":"Our office",
+        "sub-title-1":"Contact details", 
+        "text-1":"Address", 
+        "text-3":"Phone",
+        "sub-title-2":"location"
     }
 }
