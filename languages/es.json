@@ -39,7 +39,6 @@
         "text-22":"Mantenimiento en carpintería",
         "text-23":"Mantenimiento de puertas de garaje",      
         "text-24":"Mantenimiento general",
-        "text-25":"Mantenimiento general",
         "button":"Ver servicios"    
     },
     "location":{
@@ -61,5 +60,17 @@
             "field-4":"Mensaje"
         },
         "button":"enviar"
+    },
+    "aboutus":{
+        "title":"Acerca de nosotros",
+        "text-1":"Somos una empresa constructora con mas de 15 años de experiencia, llevando de la mano a nuestros clientes en todo el proceso, desde el diseño, obtener todos los permisos legales y posteriormente llevar a cabo la construcción de la casa de su sueños.",
+        "text-2":"Sabemos que contar con una propiedad en Puerto Peñasco es el sueño de muchos que buscamos el sol, la playa y un pedacito de azul.",
+        "text-3":"Estamos comprometidos con entregar un trabajo de calidad, para que su experiencia sea de lo mas placentera, recuerden nuestro lema “First class or no class”.",
+        "sub-title-1":"Diseño",
+        "info-1":"Contamos con un equipo de arquitectos para hacer cualquier tipo de diseño.",
+        "sub-title-2":"Construcción",
+        "info-2":"Contamos con un equipo de ingenieros calificados para llevar a cabo la ejecución de la obra.",
+        "sub-title-3":"Remodelación",
+        "info-3":"Contamos con un equipo de personal calificado para llevar a cabo cualquier tipo de remodelación."
     }
 }

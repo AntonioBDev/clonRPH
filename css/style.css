@@ -343,11 +343,22 @@ li .activo{
     }
 }
 .servicio{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .servicio:last-child{
-    background-color: #E98C00;
+    margin-bottom: 0;
+}
+@media (min-width:768px) {
+  .servicio:nth-last-child(-n+2){
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:1280px) {
+   .servicio:nth-last-child(-n+3){
+    margin-bottom: 0;
+  }
 }
 .servicio p{
     font-weight: 600;
