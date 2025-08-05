@@ -14,9 +14,11 @@
         <div class="bg bg-header">
           <div class="contenido-hero container height-100">
             <div class="logo flex">
-              <a href="index.html"
-                ><img class="img-logo" src="src/img/logo/logo.png" alt=""
-              /></a>
+              <div class="enlace-logo">
+                <a href="index.html"
+                  ><img class="img-logo" src="src/img/logo/logo.png" alt=""
+                /></a>
+              </div>
 
               <!--Responsive movil-->
               <nav class="navegacion">
@@ -299,22 +301,22 @@
               <input
                 type="text"
                 name="Nombre Completo"
-                placeholder="Nombre completo" />
+                placeholder="Nombre completo"  data-section="form" data-value="field-1"/>
             </div>
             <div class="campo">
               <input
                 type="email"
                 name="Correo"
-                placeholder="Correo electronico"/>
+                placeholder="Correo electronico"  data-section="form" data-value="field-2"/>
             </div>
             <div class="campo">
-              <input type="text" name="Asunto" placeholder="Asunto" />
+              <input type="text" name="Asunto" placeholder="Asunto"  data-section="form" data-value="field-3"/>
             </div>
             <div class="campo">
-              <textarea name="Mensaje" id="" placeholder="Mensaje"></textarea>
+              <textarea name="Mensaje" id="" placeholder="Mensaje"  data-section="form" data-value="field-4"></textarea>
             </div>
           </div>
-          <input type="submit" value="Enviar" class="btn btn-naranjado" />
+          <input type="submit" value="Enviar" class="btn btn-naranjado"  data-section="form" data-value="button" />
           <input type="hidden" name="_next" value="https://pruebas-inges.com/index.html" />
           <input type="hidden" name="_captcha" value="false" />
         </fieldset>

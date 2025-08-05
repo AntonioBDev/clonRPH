@@ -297,6 +297,7 @@ li .activo{
 .btn-naranjado{
     background-color: var(--color-primary);
     color: var(--c-black);
+    box-shadow: 8px 5px 5px var(--c-gris);
 }
 
 .btn-naranjado:hover{

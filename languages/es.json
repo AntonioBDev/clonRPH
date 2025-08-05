@@ -53,12 +53,10 @@
     "form":{
         "title":"Háblanos sobre tu proyecto",
         "text":"Solicita tu presupuesto",
-        "fields":{
-            "field-1":"Nombre completo",
-            "field-2":"Correo electronico",
-            "field-3":"Asunto",
-            "field-4":"Mensaje"
-        },
+        "field-1":"Nombre completo",
+        "field-2":"Correo electronico",
+        "field-3":"Asunto",
+        "field-4":"Mensaje",
         "button":"enviar"
     },
     "aboutus":{
