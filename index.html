@@ -135,11 +135,14 @@
         </h2>
         <div class="servicios m-tb-3">
           <div class="servicio">
-            <img
-              loading="lazy"
+            <picture>
+              
+              <img
               src="src/img/galeria/1.png "
               alt="Imagen de casa remodelado"
-            />
+              loading="lazy"
+                />
+            </picture>
             <p
               class="servicio-titulo"
               data-section="services"
@@ -213,7 +216,7 @@
         <div class="btn__servicio-flex">
           <a
             href="servicios.html"
-            class="btn btn-naranjado"
+            class="btn btn-naranjado d-iblock"
             data-section="services"
             data-value="button"
             >Ver servicios
@@ -316,7 +319,7 @@
               <textarea name="Mensaje" id="" placeholder="Mensaje"  data-section="form" data-value="field-4"></textarea>
             </div>
           </div>
-          <input type="submit" value="Enviar" class="btn btn-naranjado"  data-section="form" data-value="button" />
+          <input type="submit" value="Enviar" id="to-send" class="btn btn-naranjado"  data-section="form" data-value="button"/>
           <input type="hidden" name="_next" value="https://pruebas-inges.com/index.html" />
           <input type="hidden" name="_captcha" value="false" />
         </fieldset>

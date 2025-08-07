@@ -1,17 +1,21 @@
 // variables
-// const btnLanguage = document.querySelectorAll("select option [data-language]");
 const userLanguage = localStorage.getItem("language") || "es";
 let translations = {};
 const btnSelectLanguage = document.querySelector("#languages");
 const textToChange = document.querySelectorAll("[data-section]");
-let idioma = "";
 document.addEventListener("DOMContentLoaded", () => {
   loadTranslations(userLanguage);
+  
+  // Valor del elemento OPTION del SELECT
+  btnSelectLanguage.addEventListener("change", (e) => {
+    const lang = e.target.value;
+    loadTranslations(lang);
+  });
 });
+
 
 //Cargar traducciones
 async function loadTranslations(lang) {
-  console.log(lang);
   try {
     const response = await fetch(`../languages/${lang}.json`);
     if (!response.ok) {
@@ -19,76 +23,42 @@ async function loadTranslations(lang) {
         `Error al cargar el archivo de idioma: ${response.statusText}`
       );
     }
-     translations = await response.json();
-
-    // Lógica de tu primer código para actualizar los elementos
-   
-
-
+    translations = await response.json();
     applyTranslations();
     localStorage.setItem("language", lang);
     document.documentElement.lang = lang;
     updateLanguageSelect(lang);
-    // traducir(lang);
   } catch (error) {
     console.log("No se puede cargar las traducciones del json");
   }
 }
 
 function applyTranslations() {
-     textToChange.forEach((atribute) => {
-      const section = atribute.dataset.section;
-      const value = atribute.dataset.value;
-        let translatedText = translations;
-        const pathParts = value.split(".");
+     textToChange.forEach((element) => {
+      const section = element.dataset.section;
+      const value = element.dataset.value;
+      let translatedText = translations;
 
-
-      // Verificamos si los datos existen para evitar errores
-      if (translations[section] && translations[section][value]) {
-        atribute.innerHTML = translations[section][value];
-      } else {
-        console.error(`Traducción no encontrada para [${section}][${value}]`);
-      }
-    });
-
-    textToChange.forEach((atribute) => {
-
-    // for(const part of pathParts){
-    //     if(translatedText && translatedText[part] !== undefined){
-    //         translatedText = translatedText[part];
-    //     }else{
-    //         translatedText = undefined;
-    //         break;
-    //     }
-
-    //     if(translatedText !== undefined){
-    //         element.innerHTML = translatedText;
-    //     }
-    // }
-  });
+      if(translatedText !== undefined){
+           // Si es un input o textarea, actualiza el atributo placeholder
+            if (element.tagName === 'INPUT'){
+              if(element.type === "submit"){
+                element.setAttribute('value', translations[section][value])
+              }else{
+                element.setAttribute('placeholder', translations[section][value]);
+              }
+            }else if(element.tagName === 'TEXTAREA'){
+              element.setAttribute('placeholder', translations[section][value]);
+            }else {
+                // Para otros elementos, actualiza el innerHTML
+                element.innerHTML = translations[section][value];
+            }
+        }
+      });
 }
 
 function updateLanguageSelect(currentLang) {
   if (btnSelectLanguage) {
     btnSelectLanguage.value = currentLang;
   }
-}
-
-// Valor del elemento OPTION del SELECT
-btnSelectLanguage.addEventListener("change", (e) => {
-  const idioma = e.target.value;
-  loadTranslations(idioma);
-});
-
-function traducir(language) {
-  fetch(`../languages/${language}.json`)
-    .then((res) => res.json())
-    .then((data) => {
-      textToChange.forEach((atribute) => {
-        const section = atribute.dataset.section;
-        const value = atribute.dataset.value;
-
-        atribute.innerHTML = data[section][value];
-      });
-    });
 }
