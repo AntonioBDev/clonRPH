@@ -133,7 +133,7 @@ svg{
 }
 
 .bg-header{
-    background-color: rgb(0, 0, 0, .2);
+    background-color: rgb(0, 0, 0, .3);
 }
 
 .height-100{
@@ -151,7 +151,7 @@ svg{
 
 .img-logo{
     margin-top: 1rem;
-    width: 15rem;
+    width: 10rem;
 }
 
 @media  screen and (min-width:768px){
@@ -497,9 +497,9 @@ li .activo{
 /*Seccion de formulario*/
 .formulario{
     background-color: var(--form-bg);
-    width: 95%;
+    width: 100%;
     max-width: 648px;
-    height: 880px;
+    height: auto;
     margin: 0 auto;
     padding-top: 5rem;
 }
@@ -537,7 +537,7 @@ fieldset p{
 .campo input, .campo textarea{
     font-size: 1.8rem;
     width: 100%;
-      padding: 1rem 2rem;
+    padding: 1rem 2rem;
 }
 
 .campo input{

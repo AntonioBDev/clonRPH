@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header" >
+    <header class="header">
       <div class="hero hero__img-header">
         <div class="bg bg-header">
           <div class="contenido-hero container height-100">
             <div class="logo flex">
               <div class="enlace-logo">
                 <a href="index.html"
-                  ><img class="img-logo" src="src/img/logo/logo.png" alt=""
+                  ><img
+                    class="img-logo"
+                    src="src/img/logo/logo.png"
+                    alt="Logo image"
                 /></a>
               </div>
 
@@ -25,7 +28,7 @@
                 <img
                   class="menu__icono-movil"
                   src="src/img/menu/menu.png"
-                  alt=""
+                  alt="Image menu"
                 />
                 <div class="contenido-menu">
                   <ul class="lista-enlaces no-margin no-padding">
@@ -122,7 +125,7 @@
       </div>
       <!--hero-->
     </header>
-    <!--header--> 
+    <!--header-->
 
     <main class="contenido-principal">
       <section class="container section-servicios p-top">
@@ -136,12 +139,11 @@
         <div class="servicios m-tb-3">
           <div class="servicio">
             <picture>
-              
               <img
-              src="src/img/galeria/1.png "
-              alt="Imagen de casa remodelado"
-              loading="lazy"
-                />
+                src="src/img/galeria/1.png "
+                alt="Image of a house under renovation"
+                loading="lazy"
+              />
             </picture>
             <p
               class="servicio-titulo"
@@ -156,7 +158,7 @@
             <img
               loading="lazy"
               src="src/img/galeria/2.png"
-              alt="Imagen de una casa en construcción"
+              alt="Image of a built house"
             />
             <p
               class="servicio-titulo"
@@ -221,7 +223,7 @@
             data-value="button"
             >Ver servicios
             <!-- <img loading="lazy" src="src/img/herramientas/flecha.png" alt=""/> -->
-        </a>
+          </a>
         </div>
       </section>
       <!--section-->
@@ -249,7 +251,13 @@
     <!--ubicacion-->
 
     <section class="section-proyectos p-top m-tb-3">
-      <h2 class="container text-center" data-section="projects" data-value="title">Nuestros Proyectos</h2>
+      <h2
+        class="container text-center"
+        data-section="projects"
+        data-value="title"
+      >
+        Nuestros Proyectos
+      </h2>
       <div class="proyectos grid-template-columns m-tb-3">
         <div class="proyecto img-1">
           <div class="bg-proyecto">
@@ -282,10 +290,14 @@
       </div>
       <!--proyectos-->
       <div class="container btn__servicio-flex">
-        <a href="proyectos.html" class="btn btn-naranjado"
-           data-section="projects" data-value="button">Ver proyectos
+        <a
+          href="proyectos.html"
+          class="btn btn-naranjado"
+          data-section="projects"
+          data-value="button"
+          >Ver proyectos
           <!-- <img loading="lazy" src="src/img/herramientas/flecha.png" alt=""/> -->
-          </a>
+        </a>
       </div>
     </section>
     <!--section-proyectos-->
@@ -297,37 +309,68 @@
         class="formulario"
       >
         <fieldset>
-          <legend data-section="form" data-value="title">Háblanos Sobre tu Proyecto</legend>
+          <legend data-section="form" data-value="title">
+            Háblanos Sobre tu Proyecto
+          </legend>
           <p data-section="form" data-value="text">Solicita tu presupuesto</p>
           <div class="campos">
             <div class="campo">
               <input
                 type="text"
                 name="Nombre Completo"
-                placeholder="Nombre completo"  data-section="form" data-value="field-1"/>
+                placeholder="Nombre completo"
+                data-section="form"
+                data-value="field-1"
+              />
             </div>
             <div class="campo">
               <input
                 type="email"
                 name="Correo"
-                placeholder="Correo electronico"  data-section="form" data-value="field-2"/>
+                placeholder="Correo electronico"
+                data-section="form"
+                data-value="field-2"
+              />
             </div>
             <div class="campo">
-              <input type="text" name="Asunto" placeholder="Asunto"  data-section="form" data-value="field-3"/>
+              <input
+                type="text"
+                name="Asunto"
+                placeholder="Asunto"
+                data-section="form"
+                data-value="field-3"
+              />
             </div>
             <div class="campo">
-              <textarea name="Mensaje" id="" placeholder="Mensaje"  data-section="form" data-value="field-4"></textarea>
+              <textarea
+                name="Mensaje"
+                id=""
+                placeholder="Mensaje"
+                data-section="form"
+                data-value="field-4"
+              ></textarea>
             </div>
           </div>
-          <input type="submit" value="Enviar" id="to-send" class="btn btn-naranjado"  data-section="form" data-value="button"/>
-          <input type="hidden" name="_next" value="https://pruebas-inges.com/index.html" />
+          <input
+            type="submit"
+            value="Enviar"
+            id="to-send"
+            class="btn btn-naranjado"
+            data-section="form"
+            data-value="button"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://magical-kitsune-13fe7b.netlify.app/"
+          />
           <input type="hidden" name="_captcha" value="false" />
         </fieldset>
       </form>
     </section>
     <!--formulario-->
 
-     <div class="languages container">
+    <div class="languages container">
       <select name="" id="languages" class="languages">
         <option value="es" data-language="es">🇲🇽 Español</option>
         <option value="en" data-language="en">🇺🇸 English</option>
@@ -362,6 +405,6 @@
     <!--footer-->
 
     <script src="js/script.js"></script>
-     <!-- <script src="js/lenaguje.js"></script> -->
+    <!-- <script src="js/lenaguje.js"></script> -->
   </body>
 </html>
