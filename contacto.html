@@ -7,43 +7,54 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/stylevideo.css">
   </head>
   <body>
-    <header class="header" >
+    <header class="header">
       <div class="video">
-        <div class="overlay bg-header">
-          <div class="contenido-video container">
+        <div class="overlay bg hero__bg--color">
+          <div class="container">
             <div class="logo flex">
-               <a href="index.html"><img class="img-logo" src="src/img/logo/logo.png" alt="" /></a>
+              <a href="index.html"><img class="logo__img" src="src/img/logo/logo.png" alt="" /></a>
               <!--Responsive movil-->
-              <nav class="navegacion">
+              <nav class="nav">
                 <img
-                  class="menu__icono-movil"
+                  class="nav__icon--mobile"
                   src="src/img/menu/menu.png"
                   alt=""
                 />
-                <div class="contenido-menu">
-                  <ul class="lista-enlaces no-margin no-padding">
-                   <li><a href="index.html" class="enlace" data-section="navigation" data-value="home">Inicio</a></li>
-                    <li><a href="proyectos.html" class="enlace" data-section="navigation" data-value="projects">Proyectos</a></li>
-                    <li><a href="servicios.html" class="enlace" data-section="navigation" data-value="services">Servicios</a></li>
-                    <li><a href="nosotros.html" class="enlace" data-section="navigation" data-value="about-us">Nosotros</a></li>
-                    <li><a href="contacto.html" class="enlace activo" data-section="navigation" data-value="our-contact">Contacto</a></li>
+                <div class="nav__content">
+                  <ul class="list__links no-margin no-padding">
+                    <li><a href="index.html" class="link" data-section="navigation" data-value="home">Inicio</a></li>
+                    <li>
+                      <a href="proyectos.html" class="link"
+                      data-section="navigation"
+                      data-value="projects">Proyectos</a
+                      >
+                    </li>
+                    <li>
+                      <a href="servicios.html" class="link"
+                      data-section="navigation"
+                      data-value="services">Servicios</a>
+                    </li>
+                    <li><a href="nosotros.html" class="link"
+                    data-section="navigation"
+                    data-value="about-us">Nosotros</a></li>
+                    <li><a href="contacto.html" class="link active" data-section="navigation"
+                    data-value="our-contact">Contacto</a></li>
                   </ul>
                 </div>
               </nav>
               <!--navegacion-->
             </div>
             <!--logo-->
-            <div class="info-hero">
+            <div class="hero__info">
               <h1 class="no-margin info-titulo text-center c-white">Contacto</h1>
               <!-- Botones-->
-              <!-- <div class="hero-btn d-fc">
+              <!-- <div class="hero__btn">
                 <a href="#" class="btn btn-naranjado d-iblock"
                   >Nuestros servicios</a
                 >
-                <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+                <a href="#" class="btn btn-transparent d-iblock">Contacto</a>
               </div> -->
               <!--hero-btn-->
             </div>
@@ -51,7 +62,7 @@
           </div>
         </div>
         <!--overlay-->
-        <video autoplay loop muted>
+        <video autoplay muted loop>
           <source src="src/video/hero/presentacion.mp4" type="video/mp4" />
           <source src="src/video/hero/presentacion.ogv" type="video/ogv" />
           <source
@@ -64,21 +75,21 @@
     </header>
     <!--header-->
 
-    <main class="contenido-principal">
-      <section class="container section-servicios p-top">
+    <main>
+      <section class="container p-top">
         <h2 class="text-center m-tb-3 b-b-2" data-section="contact" data-value="title">Nuestra oficina</h2>
-        <div class="detalles-contacto">
+        <div>
           <h3 class="text-center" data-section="contact" data-value="sub-title-1">Detalles de contacto</h3>
-          <div class="datos">
+          <div class="data">
             <h4 class="no-margin no-padding" data-section="contact" data-value="text-1">Direccinón:</h4>
             <p>Ave. Tecla Viuda De Bustamante Entre Rio Mayo Y Rio Fuerte #308. Col. Luis Donaldo Colosio.</p>
           </div>
-           <div class="datos">
+           <div class="data">
             <h4 class="no-margin no-padding">Email:</h4>
             <p>rockypointhomebuilders@hotmail.com</p>
             <p>ventas@rockypointhomebuildersmx.com</p>
           </div>
-           <div class="datos">
+           <div class="data">
             <h4 class="no-margin no-padding" data-section="contact" data-value="text-3">Teléfono:</h4>
             <p>+52 (638) 386 4621</p>
           </div>
@@ -101,15 +112,29 @@
     </div>
     <!--languages-->
     
-    <footer class="footer">
+   <footer class="footer">
       <div class="container f-footer">
-        <p> Copyright © 2025 Rocky Point Home Builders Mx.</p>
-        <div class="icono-redes">
-         <a href="https://www.facebook.com/people/Rocky-Point-Home-Builders-Mx/61574000968490/?mibextid=wwXIfr&rdid=cglYWPc4mIj2lsnV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sci3NpDS%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/img/redes/facebook.svg" alt="Icono de facebook" loading="lazy"></a>
-         <a href="tel:+526383864621"><img src="src/img/redes/tel.png" alt="Icono de telefono" loading="lazy"></a>
-        </div><!--iconos-redes-->
+        <p>Copyright © 2025 Rocky Point Home Builders Mx.</p>
+        <div class="icon__socialNetworks">
+          <a
+            href="https://www.facebook.com/people/Rocky-Point-Home-Builders-Mx/61574000968490/?mibextid=wwXIfr&rdid=cglYWPc4mIj2lsnV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sci3NpDS%2F%3Fmibextid%3DwwXIfr"
+            target="_blank"
+            ><img
+              loading="lazy"
+              src="src/img/redes/facebook.svg"
+              alt="Icono de facebook"
+          /></a>
+          <a href="tel:+526383864621"
+            ><img
+              loading="lazy"
+              src="src/img/redes/tel.png"
+              alt="Icono de telefono"
+          /></a>
+        </div>
+        <!--iconos-redes-->
       </div>
-    </footer><!--footer-->
+    </footer>
+    <!--footer-->
 
     <script src="js/script.js"></script>
   </body>

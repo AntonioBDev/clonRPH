@@ -10,32 +10,30 @@
   </head>
   <body>
     <header class="header">
-      <div class="hero hero__img-header">
-        <div class="bg bg-header">
-          <div class="contenido-hero container height-100">
-            <div class="logo flex">
-              <div class="enlace-logo">
+      <div class="hero header__hero--img">
+        <div class="bg hero__bg--color">
+          <div class="container">
+            <div class="logo">
+              <div class="content__logo">
                 <a href="index.html"
                   ><img
-                    class="img-logo"
+                    class="logo__img"
                     src="src/img/logo/logo.png"
                     alt="Logo image"
                 /></a>
               </div>
-
-              <!--Responsive movil-->
-              <nav class="navegacion">
+              <nav class="nav">
                 <img
-                  class="menu__icono-movil"
+                  class="nav__icon--mobile"
                   src="src/img/menu/menu.png"
                   alt="Image menu"
                 />
-                <div class="contenido-menu">
-                  <ul class="lista-enlaces no-margin no-padding">
+                <div class="nav__content">
+                  <ul class="list__links no-margin no-padding">
                     <li>
                       <a
                         href="index.html"
-                        class="enlace activo"
+                        class="link active"
                         data-section="navigation"
                         data-value="home"
                         >Inicio</a
@@ -44,7 +42,7 @@
                     <li>
                       <a
                         href="proyectos.html"
-                        class="enlace"
+                        class="link"
                         data-section="navigation"
                         data-value="projects"
                         >Proyectos</a
@@ -53,7 +51,7 @@
                     <li>
                       <a
                         href="servicios.html"
-                        class="enlace"
+                        class="link"
                         data-section="navigation"
                         data-value="services"
                         >Servicios</a
@@ -62,7 +60,7 @@
                     <li>
                       <a
                         href="nosotros.html"
-                        class="enlace"
+                        class="link"
                         data-section="navigation"
                         data-value="about-us"
                         >Nosotros</a
@@ -71,7 +69,7 @@
                     <li>
                       <a
                         href="contacto.html"
-                        class="enlace"
+                        class="link"
                         data-section="navigation"
                         data-value="our-contact"
                         >Contacto</a
@@ -83,23 +81,23 @@
               <!--navegacion-->
             </div>
             <!--logo-->
-            <div class="info-hero">
+            <div class="hero__info">
               <p
-                class="info-descripcion c-white"
+                class="info__description c-white"
                 data-section="header"
                 data-value="text"
               >
                 Has realidad tus sueños
               </p>
               <h1
-                class="no-margin info-titulo c-white"
+                class="info__title no-margin c-white"
                 data-section="header"
                 data-value="title"
               >
                 Diseña, Construye o Remodela tu espacio
               </h1>
               <!-- Botones-->
-              <div class="hero-btn">
+              <div class="hero__btn">
                 <a
                   href="servicios.html"
                   class="btn btn-naranjado d-iblock"
@@ -109,7 +107,7 @@
                 >
                 <a
                   href="contacto.html"
-                  class="btn btn-transparente d-iblock"
+                  class="btn btn-transparent d-iblock"
                   data-section="header"
                   data-value="button-contact"
                   >Contacto</a
@@ -127,8 +125,8 @@
     </header>
     <!--header-->
 
-    <main class="contenido-principal">
-      <section class="container section-servicios p-top">
+    <main>
+      <section class="container p-top m-b-5">
         <h2
           class="text-center b-b-2"
           data-section="services"
@@ -136,8 +134,8 @@
         >
           Servicios Profesionales
         </h2>
-        <div class="servicios m-tb-3">
-          <div class="servicio">
+        <div class="services m-tb-3">
+          <div class="service">
             <picture>
               <img
                 src="src/img/galeria/1.png "
@@ -146,83 +144,82 @@
               />
             </picture>
             <p
-              class="servicio-titulo"
+              class="service-titulo"
               data-section="services"
               data-value="text-1"
             >
               Remodelaciones
             </p>
           </div>
-          <!--servicio-->
-          <div class="servicio">
+          <!--service-->
+          <div class="service">
             <img
               loading="lazy"
               src="src/img/galeria/2.png"
               alt="Image of a built house"
             />
             <p
-              class="servicio-titulo"
+              class="service-titulo"
               data-section="services"
               data-value="text-2"
             >
               Construcción​
             </p>
           </div>
-          <!--servicio-->
-          <div class="servicio">
-            <img loading="lazy" src="src/img/galeria/3.png" alt="" />
+          <!--service-->
+          <div class="service">
+            <img loading="lazy" src="src/img/galeria/3.png" alt="Image showing the desing of a house" />
             <p
-              class="servicio-titulo"
+              class="service-titulo"
               data-section="services"
               data-value="text-3"
             >
               Diseño
             </p>
           </div>
-          <!--servicio-->
-          <div class="servicio">
-            <img loading="lazy" src="src/img/galeria/4.png" alt="" />
+          <!--service-->
+          <div class="service">
+            <img loading="lazy" src="src/img/galeria/4.png" alt="Image showing material handling" />
             <p
-              class="servicio-titulo"
+              class="service-titulo"
               data-section="services"
               data-value="text-4"
             >
-              Manejo de Materiales
+              Manejo de materiales
             </p>
           </div>
-          <!--servicio-->
-          <div class="servicio">
-            <img loading="lazy" src="src/img/galeria/5.png" alt="" />
+          <!--service-->
+          <div class="service">
+            <img loading="lazy" src="src/img/galeria/5.png" alt="Image showing the electrical and plumbing installations" />
             <p
-              class="servicio-titulo"
+              class="service-titulo"
               data-section="services"
               data-value="text-5"
             >
-              Instalaciones Eléctricas e Hidrosanitarias​
+              Instalaciones eléctricas e hidrosanitarias​
             </p>
           </div>
-          <!--servicio-->
-          <div class="servicio">
-            <img loading="lazy" src="src/img/galeria/6.png" alt="" />
+          <!--service-->
+          <div class="service">
+            <img loading="lazy" src="src/img/galeria/6.png" alt="Image showing qualified personnel" />
             <p
-              class="servicio-titulo"
+              class="service-titulo"
               data-section="services"
               data-value="text-6"
             >
-              Manejo de Personal Calificado
+              Manejo de personal calificado
             </p>
           </div>
-          <!--servicio-->
+          <!--service-->
         </div>
         <!--servicios-->
-        <div class="btn__servicio-flex">
+        <div class="btn-flex">
           <a
             href="servicios.html"
             class="btn btn-naranjado d-iblock"
             data-section="services"
             data-value="button"
             >Ver servicios
-            <!-- <img loading="lazy" src="src/img/herramientas/flecha.png" alt=""/> -->
           </a>
         </div>
       </section>
@@ -230,15 +227,15 @@
     </main>
     <!--contenido-principal-->
 
-    <section class="ubicacion">
-      <div class="hero-ubicacion">
-        <div class="bg bg-ubicacion">
+    <section class="location">
+      <div class="location__hero">
+        <div class="bg location__bg">
           <h2 class="no-margin" data-section="location" data-value="title">
             Donde nos ubicamos
           </h2>
           <a
             href="contacto.html"
-            class="btn btn-transparente btn-borde"
+            class="btn btn-transparent btn-border"
             data-section="location"
             data-value="button"
             >Buscanos</a
@@ -250,7 +247,7 @@
     </section>
     <!--ubicacion-->
 
-    <section class="section-proyectos p-top m-tb-3">
+    <section class="p-top m-b-5">
       <h2
         class="container text-center"
         data-section="projects"
@@ -258,63 +255,62 @@
       >
         Nuestros Proyectos
       </h2>
-      <div class="proyectos grid-template-columns m-tb-3">
-        <div class="proyecto img-1">
-          <div class="bg-proyecto">
+      <div class="projects grid-template-columns m-tb-3">
+        <div class="project img-1">
+          <div class="bg-project">
             <h3>Villa Stone</h3>
             <p>Las conchas, Puerto Peñasco.</p>
           </div>
         </div>
-        <!--proyecto-->
-        <div class="proyecto img-2">
-          <div class="bg-proyecto">
+        <!--project-->
+        <div class="project img-2">
+          <div class="bg-project">
             <h3>Casa Kosh</h3>
             <p>Las conchas, Puerto Peñasco.</p>
           </div>
         </div>
-        <!--proyecto-->
-        <div class="proyecto img-3">
-          <div class="bg-proyecto">
+        <!--project-->
+        <div class="project img-3">
+          <div class="bg-project">
             <h3>Villa pescador</h3>
             <p>El puerto, Puerto Peñasco.</p>
           </div>
         </div>
-        <!--proyecto-->
-        <div class="proyecto img-4">
-          <div class="bg-proyecto">
+        <!--project-->
+        <div class="project img-4">
+          <div class="bg-project">
             <h3>Casa san martino</h3>
             <p>Playa miramar, Puerto Peñasco.</p>
           </div>
         </div>
-        <!--proyecto-->
+        <!--project-->
       </div>
-      <!--proyectos-->
-      <div class="container btn__servicio-flex">
+      <!--projects-->
+      <div class="container btn-flex">
         <a
-          href="proyectos.html"
+          href="projects.html"
           class="btn btn-naranjado"
           data-section="projects"
           data-value="button"
           >Ver proyectos
-          <!-- <img loading="lazy" src="src/img/herramientas/flecha.png" alt=""/> -->
         </a>
       </div>
     </section>
     <!--section-proyectos-->
 
-    <section class="section-form b-b-2 container">
+    <section class="b-b-2 container">
       <form
         action="https://formsubmit.co/0192d88a80c2f536729a01fd19e44d35"
         method="POST"
-        class="formulario"
+        class="form"
       >
         <fieldset>
           <legend data-section="form" data-value="title">
             Háblanos Sobre tu Proyecto
           </legend>
           <p data-section="form" data-value="text">Solicita tu presupuesto</p>
-          <div class="campos">
-            <div class="campo">
+          <div class="fields">
+            <div class="field">
               <input
                 type="text"
                 name="Nombre Completo"
@@ -323,7 +319,7 @@
                 data-value="field-1"
               />
             </div>
-            <div class="campo">
+            <div class="field">
               <input
                 type="email"
                 name="Correo"
@@ -332,7 +328,7 @@
                 data-value="field-2"
               />
             </div>
-            <div class="campo">
+            <div class="field">
               <input
                 type="text"
                 name="Asunto"
@@ -341,7 +337,7 @@
                 data-value="field-3"
               />
             </div>
-            <div class="campo">
+            <div class="field">
               <textarea
                 name="Mensaje"
                 id=""
@@ -383,7 +379,7 @@
     <footer class="footer">
       <div class="container f-footer">
         <p>Copyright © 2025 Rocky Point Home Builders Mx.</p>
-        <div class="icono-redes">
+        <div class="icon__socialNetworks">
           <a
             href="https://www.facebook.com/people/Rocky-Point-Home-Builders-Mx/61574000968490/?mibextid=wwXIfr&rdid=cglYWPc4mIj2lsnV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sci3NpDS%2F%3Fmibextid%3DwwXIfr"
             target="_blank"

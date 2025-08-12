@@ -7,43 +7,57 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/stylevideo.css">
   </head>
   <body>
-    <header class="header" >
+     <header class="header">
       <div class="video">
-        <div class="overlay bg-header">
-          <div class="contenido-video container">
+        <div class="overlay bg hero__bg--color">
+          <div class="container">
             <div class="logo flex">
-               <a href="index.html"><img class="img-logo" src="src/img/logo/logo.png" alt="" /></a>
+              <a href="index.html"><img class="logo__img" src="src/img/logo/logo.png" alt="" /></a>
               <!--Responsive movil-->
-              <nav class="navegacion">
-              <img class="menu__icono-movil" src="src/img/menu/menu.png" alt="" />
-              <div class="contenido-menu">
-                <ul class="lista-enlaces no-margin no-padding">
-                  <li><a href="index.html" class="enlace" data-section="navigation" data-value="home" data-section="navigation" data-value="home">Inicio</a></li>
-                  <li><a href="proyectos.html" class="enlace" data-section="navigation" data-value="projects" data-section="navigation" data-value="projects">Proyectos</a></li>
-                  <li><a href="servicios.html" class="enlace activo" data-section="navigation" data-value="services" data-section="navigation" data-value="services">Servicios</a></li>
-                  <li><a href="nosotros.html" class="enlace" data-section="navigation" data-value="about-us" data-section="navigation" data-value="about-us">Nosotros</a></li>
-                  <li><a href="contacto.html" class="enlace" data-section="navigation" data-value="our-contact" data-section="navigation" data-value="our-contact">Contacto</a></li>
-                </ul>
-              </div>
+              <nav class="nav">
+                <img
+                  class="nav__icon--mobile"
+                  src="src/img/menu/menu.png"
+                  alt=""
+                />
+                <div class="nav__content">
+                  <ul class="list__links no-margin no-padding">
+                    <li><a href="index.html" class="link" data-section="navigation" data-value="home">Inicio</a></li>
+                    <li>
+                      <a href="proyectos.html" class="link"
+                      data-section="navigation"
+                      data-value="projects">Proyectos</a
+                      >
+                    </li>
+                    <li>
+                      <a href="servicios.html" class="link active"
+                      data-section="navigation"
+                      data-value="services">Servicios</a>
+                    </li>
+                    <li><a href="nosotros.html" class="link"
+                    data-section="navigation"
+                    data-value="about-us">Nosotros</a></li>
+                    <li><a href="contacto.html" class="link" data-section="navigation"
+                    data-value="our-contact">Contacto</a></li>
+                  </ul>
+                </div>
               </nav>
               <!--navegacion-->
             </div>
             <!--logo-->
-            <div class="info-hero">
-              <h1 class="no-margin info-titulo text-center c-white" data-section="services" data-value="header">Servicios</h1>
+            <div class="hero__info">
+                  <h1 class="no-margin info-titulo text-center c-white" data-section="services" data-value="header">Servicios</h1>
               <!-- Botones-->
-              <!-- <div class="hero-btn d-fc">
+              <!-- <div class="hero__btn">
                 <a href="#" class="btn btn-naranjado d-iblock"
                   >Nuestros servicios</a
                 >
-                <a href="#" class="btn btn-transparente d-iblock">Contacto</a>
+                <a href="#" class="btn btn-transparent d-iblock">Contacto</a>
               </div> -->
               <!--hero-btn-->
             </div>
-            <!--info-hero-->
             <!--info-hero-->
           </div>
         </div>
@@ -61,107 +75,107 @@
     </header>
     <!--header-->
 
-    <main class="contenido-principal">
+    <main>
       <section class="container section-servicios b-b-2 p-top">
         <h2 class="b-b-2 text-center" data-section="services" data-value="header">Servicios</h2>
-        <div class="servicios m-tb-3">
-          <div class="servicio">
+        <div class="services m-tb-3">
+          <div class="service">
             <img src="src/img/galeria/servicios/s1.png"  loading="lazy" alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-3">Diseño</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-3">Diseño</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s2.png"  loading="lazy" alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-6" >Manejo de Personal Calificado</p>
-          </div><!--servicio-->
-           <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-6" >Manejo de Personal Calificado</p>
+          </div><!--service-->
+           <div class="service">
             <img src="src/img/galeria/servicios/s3.png"  loading="lazy" alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-4">Manejo de Materiales</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-4">Manejo de Materiales</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s4.png"  loading="lazy" alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-2" >Construcción</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-2" >Construcción</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s5.png"  loading="lazy" alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-1" >Remodelaciones​</p>
-          </div><!--servicio-->
-           <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-1" >Remodelaciones​</p>
+          </div><!--service-->
+           <div class="service">
             <img src="src/img/galeria/servicios/s6.png"  loading="lazy" alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-5" >Instalaciones Eléctricas e Hidrosanitarias​​</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-5" >Instalaciones Eléctricas e Hidrosanitarias​​</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s7.png"  loading="lazy" alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-7">Aplicación de Impermeabilizante</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-7">Aplicación de Impermeabilizante</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s8.png"  loading="lazy" alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-8">Instalación de Loseta Cerámica, Porcelanato y Vidrio Block</p>
-          </div><!--servicio-->
-           <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-8">Instalación de Loseta Cerámica, Porcelanato y Vidrio Block</p>
+          </div><!--service-->
+           <div class="service">
             <img src="src/img/galeria/servicios/s9.png"  loading="lazy" alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-9">Escaleras</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-9">Escaleras</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s10.png "loading="lazy"  alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-10">Mantenimiento de A/C</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-10">Mantenimiento de A/C</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s11.png "loading="lazy"  alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-11">Trabajos de Tablaroca</p>
-          </div><!--servicio-->
-           <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-11">Trabajos de Tablaroca</p>
+          </div><!--service-->
+           <div class="service">
             <img src="src/img/galeria/servicios/s12.png "loading="lazy" alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-12" >Instalación de Chimenea</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-12" >Instalación de Chimenea</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s13.png "loading="lazy"  alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-13" >Pisos Estampados</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-13" >Pisos Estampados</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s14.png "loading="lazy"  alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-14" >Instalación de Césped Sintético</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-14" >Instalación de Césped Sintético</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s15.png "loading="lazy"  alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-15"  >Albercas</p>
-          </div><!--servicio-->
-           <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-15"  >Albercas</p>
+          </div><!--service-->
+           <div class="service">
             <img src="src/img/galeria/servicios/s16.png "loading="lazy"  alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-16" >Paneles Solares y Colocación de Baterías de Respaldo para el hogar​</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-16" >Paneles Solares y Colocación de Baterías de Respaldo para el hogar​</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s17.png "loading="lazy"  alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-17" >Trabajos de Carpintería Moderna</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-17" >Trabajos de Carpintería Moderna</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s18.png "loading="lazy"  alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-18" >Elaboración de Pérgolas</p>
-          </div><!--servicio-->
-           <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-18" >Elaboración de Pérgolas</p>
+          </div><!--service-->
+           <div class="service">
             <img src="src/img/galeria/servicios/s19.png "loading="lazy"  alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-19" >Instalaciones de Equipos Hidroneumáticos, Cisternas y Biodigestor</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-19" >Instalaciones de Equipos Hidroneumáticos, Cisternas y Biodigestor</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s20.png "loading="lazy"  alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-20"  >Instalaciones de Sistema de Riego</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-20"  >Instalaciones de Sistema de Riego</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s21.png "loading="lazy"  alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-21"  >Muro Llorón</p>
-          </div><!--servicio-->
-           <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-21"  >Muro Llorón</p>
+          </div><!--service-->
+           <div class="service">
             <img src="src/img/galeria/servicios/s22.png "loading="lazy"  alt="">
-            <p class="servicio-titulo" data-section="services" data-value="text-22"  >Mantenimiento en Carpintería</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo" data-section="services" data-value="text-22"  >Mantenimiento en Carpintería</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s23.png "loading="lazy"  alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-23" >Mantenimiento de Puertas de Garaje​</p>
-          </div><!--servicio-->
-          <div class="servicio">
+            <p class="service-titulo"  data-section="services" data-value="text-23" >Mantenimiento de Puertas de Garaje​</p>
+          </div><!--service-->
+          <div class="service">
             <img src="src/img/galeria/servicios/s24.png "loading="lazy"  alt="">
-            <p class="servicio-titulo"  data-section="services" data-value="text-24" >Mantenimiento General</p>
-          </div><!--servicio-->
-        </div><!--servicios-->
+            <p class="service-titulo"  data-section="services" data-value="text-24" >Mantenimiento General</p>
+          </div><!--service-->
+        </div><!--services-->
       </section>
       <!--section-->
     </main><!--contenido-principal-->
@@ -176,15 +190,29 @@
     </div>
     <!--languages-->
     
-    <footer class="footer">
+     <footer class="footer">
       <div class="container f-footer">
-        <p> Copyright © 2025 Rocky Point Home Builders Mx.</p>
-        <div class="icono-redes">
-         <a href="https://www.facebook.com/people/Rocky-Point-Home-Builders-Mx/61574000968490/?mibextid=wwXIfr&rdid=cglYWPc4mIj2lsnV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sci3NpDS%2F%3Fmibextid%3DwwXIfr" target="_blank"><img src="src/img/redes/facebook.svg" alt="Icono de facebook" loading="lazy"></a>
-         <a href="tel:+526383864621"><img src="src/img/redes/tel.png" alt="Icono de telefono" loading="lazy"></a>
-        </div><!--iconos-redes-->
+        <p>Copyright © 2025 Rocky Point Home Builders Mx.</p>
+        <div class="icon__socialNetworks">
+          <a
+            href="https://www.facebook.com/people/Rocky-Point-Home-Builders-Mx/61574000968490/?mibextid=wwXIfr&rdid=cglYWPc4mIj2lsnV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15sci3NpDS%2F%3Fmibextid%3DwwXIfr"
+            target="_blank"
+            ><img
+              loading="lazy"
+              src="src/img/redes/facebook.svg"
+              alt="Icono de facebook"
+          /></a>
+          <a href="tel:+526383864621"
+            ><img
+              loading="lazy"
+              src="src/img/redes/tel.png"
+              alt="Icono de telefono"
+          /></a>
+        </div>
+        <!--iconos-redes-->
       </div>
-    </footer><!--footer-->
+    </footer>
+    <!--footer-->
     <script src="js/script.js"></script>
   </body>
 </html>
