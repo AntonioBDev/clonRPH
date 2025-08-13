@@ -43,29 +43,29 @@ p {
 }
 h1,
 h2,
-h3{
+h3 {
   font-weight: 600;
 }
-h1{
+h1 {
   font-size: 3.5rem;
-  line-height: 4.9rem;
+  line-height: 49px;
 }
 h2 {
   font-size: 3rem;
-  line-height: 3.9rem;
+  line-height: 39px;
 }
 h3 {
   font-size: 2rem;
-  line-height: 2.6rem;
+  line-height: 26px;
+}
+p,
+a {
+  font-family: var(--fonts-second);
+  font-size: 1.5rem;
+  line-height: 24px;
 }
 a {
   text-decoration: none;
-  font-family: var(--fonts-second);
-  
-}
-p {
-  font-size: 100%;
-  line-height: 1.8;
 }
 img {
   width: 100%;
@@ -89,13 +89,38 @@ svg {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   h1 {
-    font-size: 5.625em;
+    font-size: 6rem;
+    line-height: 84px;
   }
   h2 {
     font-size: 3.5rem;
+    line-height: 46px;
   }
+  h3 {
+    font-size: 2.2rem;
+    line-height: 29px;
+  }
+}
+@media (min-width:1280px) {
+  h1 {
+    font-size: 9rem;
+    line-height: 126px;
+  }
+  h2 {
+    font-size: 3.5rem;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 2.4rem;
+    line-height: 31px;
+  }
+  a {
+  font-family: var(--fonts-second);
+  font-size: 1.6rem;
+  line-height: 26px;
+}
 }
 /*Utilidades*/
 .container {
@@ -347,20 +372,11 @@ li .active {
   flex-direction: column;
   margin-top: 3rem;
 }
-
-.info__description {
-  font-size: 2rem;
-  font-weight: 200;
-  font-family: var(--fonts-primary);
-  line-height: 1.4;
-}
-
-.info__title {
-  line-height: 1.2;
+.info__titulo-index {
+  text-transform: uppercase;
   margin-top: 0.8rem;
-  font-weight: 600;
-  font-family: var(--fonts-primary);
 }
+
 @media (min-width: 768px) {
   .info__title {
     margin-top: 1.5rem;
@@ -596,6 +612,11 @@ li .active {
   margin: 0 auto;
   padding-top: 5rem;
 }
+
+.btn-end {
+  display: flex;
+  justify-content: flex-end;
+}
 @media (min-width: 430px) {
   .form {
     padding: 5rem 3rem 2rem 3rem;
@@ -608,15 +629,15 @@ fieldset {
 
 legend {
   color: var(--c-white);
-  font-size: 4.5rem;
+  font-size: 3rem;
+  line-height: 39px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 fieldset p {
   color: var(--c-white);
-  font-size: 2.8rem;
   margin-bottom: 4rem;
 }
 
@@ -627,17 +648,12 @@ fieldset p {
 
 .field input,
 .field textarea {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 24px;
   width: 100%;
   padding: 1rem 2rem;
-  font-weight: 600;
-}
-
-.field input::placeholder,
-.field textarea::placeholder {
-  font-family: var(--fonts-primary);
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: var(--fonts-second);
 }
 
 .field input {
