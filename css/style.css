@@ -61,8 +61,11 @@ h3 {
 p,
 a {
   font-family: var(--fonts-second);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 24px;
+}
+p{
+  font-weight: 600;
 }
 a {
   text-decoration: none;
@@ -464,9 +467,7 @@ li .active {
   }
 }
 .service p {
-  font-weight: 600;
   text-transform: capitalize;
-  font-size: 2.8rem;
   text-align: center;
 }
 
@@ -815,7 +816,6 @@ video {
 
 .data p {
   font-size: 2rem;
-  font-family: var(--fonts-second);
   color: var(--c-gris);
   overflow-wrap: break-word;
 }
