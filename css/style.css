@@ -300,6 +300,7 @@ li .active{
 }
 @media (min-width:768px) {
  .info__title{
+    font-size: 5.6rem;
     margin-top: 1.5rem;
  } 
 }
