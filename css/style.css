@@ -305,6 +305,9 @@ video {
 .logo__img {
   width: 12.5rem;
 }
+.logo__img--movil{
+  width: 7rem;
+}
 
 @media (min-width: 768px) {
   .logo {
@@ -422,11 +425,16 @@ li .active {
   flex-direction: column;
   margin-top: 3rem;
 }
+
 .info__titulo-index {
   text-transform: uppercase;
   margin-top: 0.8rem;
+  font-size: 2rem;
+  line-height: 20px;
+}
+
+.info__description{
   font-size: 1rem;
-  line-height: 40px;
 }
 
 @media (min-width: 768px) {
