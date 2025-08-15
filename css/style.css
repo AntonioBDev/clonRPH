@@ -237,6 +237,11 @@ svg {
   /* overflow: hidden; */
 }
 
+.video-h90{
+  min-height: 90rem;
+  max-height: 100rem;
+}
+
 .overlay {
   position: absolute;
   inset: 0;
@@ -254,6 +259,11 @@ video {
   overflow-clip-margin: content-box;
   overflow: clip;
   pointer-events: none;
+}
+.video-h60{
+  max-height: 100rem;
+  min-height: 90rem;
+  width: auto;
 }
 
 @media (min-width: 768px) {
@@ -415,11 +425,14 @@ li .active {
 .info__titulo-index {
   text-transform: uppercase;
   margin-top: 0.8rem;
+  font-size: 4rem;
+  line-height: 40px;
 }
 
 @media (min-width: 768px) {
   .info__title {
     margin-top: 1.5rem;
+    line-height: 1;
   }
   .info__titulo-index {
     font-size: 4.8em;
@@ -437,9 +450,15 @@ li .active {
 /*hero-btn*/
 .hero__btn {
   margin-top: 2rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 5rem;
+}
+
+@media (min-width:768px) {
+  .hero__btn{
+    display: flex;
+  }
 }
 
 .btn-naranjado {
