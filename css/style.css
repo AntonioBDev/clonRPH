@@ -306,7 +306,7 @@ video {
   width: 12.5rem;
 }
 .logo__img--movil{
-  width: 7rem;
+  width: 10rem;
 }
 
 @media (min-width: 768px) {
