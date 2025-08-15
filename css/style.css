@@ -228,6 +228,43 @@ svg {
   color: var(--c-black);
 }
 
+
+/* Video */
+.video {
+  position: relative;
+  min-height: 20rem;
+  max-height: 60rem;
+  /* overflow: hidden; */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+video {
+  display: block;
+  width: 100%;
+  min-height: 20rem;
+  max-height: 40rem;
+  object-fit: cover;
+  z-index: -1;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  video {
+    width: 100%;
+    min-height: 20rem;
+    max-height: 60rem;
+    object-fit: cover;
+  }
+}
+
 /*Header*/
 .hero {
   background-position: center center;
@@ -242,7 +279,7 @@ svg {
 }
 
 .hero__bg--color {
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
 /*Logo*/
@@ -707,41 +744,7 @@ footer {
   }
 }
 
-/* Video */
-.video {
-  position: relative;
-  min-height: 20rem;
-  max-height: 60rem;
-  /* overflow: hidden; */
-}
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: auto;
-}
-
-video {
-  display: block;
-  width: 100%;
-  min-height: 20rem;
-  max-height: 40rem;
-  object-fit: cover;
-  z-index: -1;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  pointer-events: none;
-}
-
-@media (min-width: 768px) {
-  video {
-    width: 100%;
-    min-height: 20rem;
-    max-height: 60rem;
-    object-fit: cover;
-  }
-}
 
 /*Sección Proyectos*/
 @media (min-width: 768px) {
