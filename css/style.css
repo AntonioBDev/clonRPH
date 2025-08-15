@@ -276,17 +276,17 @@ video {
 }
 
 /*Header*/
-.hero {
+/* .hero {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90rem;
   position: relative;
-}
-
+} */
+/* 
 .header__hero--img {
   background-image: url(../src/img/hero/hero.jpg);
-}
+} */
 
 .hero__bg--color {
   background-color: rgb(0, 0, 0, 0.5);
@@ -305,6 +305,8 @@ video {
 .logo__img {
   width: 12.5rem;
 }
+
+/* Ajuste del tamoño del logo en modo movil solo en la pagina principal(index) */
 .logo__img--movil{
   width: 10rem;
 }
@@ -423,21 +425,32 @@ li .active {
 .hero__info {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
+  /* margin-top: .5rem; */
 }
 
 .info__titulo-index {
   text-transform: uppercase;
-  margin-top: 0.8rem;
-  font-size: 2rem;
-  line-height: 20px;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+  line-height: 35px;
 }
 
 .info__description{
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+@media (min-width:390px) {
+  .info__titulo-index {
+    font-size: 3.5rem;
+  }
+  .info__description{
+  font-size: 2.3rem;
+}
 }
 
 @media (min-width: 768px) {
+  .hero__info{
+    margin-top: 3rem;
+  }
   .info__title {
     margin-top: 1.5rem;
     line-height: 1;
