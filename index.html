@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocky Point Home Builders | Inicio</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico" />
+    <!-- <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,8 @@
     <header class="header">
       <div class="video">
         <!-- <div class="hero header__hero--img "> -->
-          <!-- <div class="bg hero__bg--color "></div> -->
-        <div class="bg hero__bg--color  overlay bg hero__bg--color">
+        <!-- <div class="bg hero__bg--color "></div> -->
+        <div class="bg hero__bg--color overlay bg hero__bg--color">
           <div class="container">
             <div class="logo">
               <div class="content__logo">
@@ -128,10 +128,13 @@
           <!--contenido-hero-->
         </div>
         <!--bg-->
-         <video autoplay  muted loop playsinline>
+        <video autoplay muted loop playsinline>
           <source src="src/video/hero/hero-primary.webm" type="video/webm" />
-          <source src="src/video/hero/hero-primary.mp4" type="video/mp4" />
-        </video><!--video-->
+          <source
+            src="src/video/hero/hero-primary.mp4"
+            type="video/mp4"
+          /></video
+        ><!--video-->
       </div>
       <!--hero-->
     </header>
@@ -149,8 +152,10 @@
         <div class="services m-tb-3">
           <div class="service">
             <picture>
+              <source src="src/img/servicios/s1.avif" type="image/avif" />
+              <source src="src/img/servicios/s1.png" type="image/png" />
               <img
-                src="src/img/servicios/s1.png "
+                src="src/img/servicios/s1.webp"
                 alt="Image of a house under renovation"
                 loading="lazy"
               />
@@ -165,11 +170,16 @@
           </div>
           <!--service-->
           <div class="service">
-            <img
-              loading="lazy"
-              src="src/img/servicios/s2.png"
-              alt="Image of a built house"
-            />
+            <picture>
+              <source src="src/img/servicios/s2.avif" type="image/avif" />
+              <source src="src/img/servicios/s2.png" type="image/png" />
+              <img
+                loading="lazy"
+                src="src/img/servicios/s2.webp"
+                alt="Image of a built house"
+                loding="lazy"
+              />
+            </picture>
             <p
               class="service-titulo"
               data-section="services"
@@ -180,11 +190,15 @@
           </div>
           <!--service-->
           <div class="service">
-            <img
-              loading="lazy"
-              src="src/img/servicios/s3.png"
-              alt="Image showing the desing of a house"
-            />
+            <picture>
+              <source src="src/img/servicios/s3.avif" type="image/avif" />
+              <source src="src/img/servicios/s3.png" type="image/png" />
+              <img
+                loading="lazy"
+                src="src/img/servicios/s3.webp"
+                alt="Image showing the desing of a house"
+              />
+            </picture>
             <p
               class="service-titulo"
               data-section="services"
@@ -195,11 +209,15 @@
           </div>
           <!--service-->
           <div class="service">
-            <img
-              loading="lazy"
-              src="src/img/servicios/s4.png"
-              alt="Image showing material handling"
-            />
+            <picture>
+              <source src="src/img/servicios/s4.avif" type="image/avif" />
+              <source src="src/img/servicios/s4.png" type="image/png" />
+              <img
+                loading="lazy"
+                src="src/img/servicios/s4.webp"
+                alt="Image showing material handling"
+              />
+            </picture>
             <p
               class="service-titulo"
               data-section="services"
@@ -210,11 +228,15 @@
           </div>
           <!--service-->
           <div class="service">
-            <img
-              loading="lazy"
-              src="src/img/servicios/s5.png"
-              alt="Image showing the electrical and plumbing installations"
-            />
+            <picture>
+              <source src="src/img/servicios/s5.avif" type="image/avif" />
+              <source src="src/img/servicios/s5.png" type="image/png" />
+              <img
+                loading="lazy"
+                src="src/img/servicios/s5.webp"
+                alt="Image showing the electrical and plumbing installations"
+              />
+            </picture>
             <p
               class="service-titulo"
               data-section="services"
@@ -225,11 +247,15 @@
           </div>
           <!--service-->
           <div class="service">
-            <img
-              loading="lazy"
-              src="src/img/servicios/s6.png"
-              alt="Image showing qualified personnel"
-            />
+            <picture>
+              <source src="src/img/servicios/s6.avif" type="image/avif" />
+              <source src="src/img/servicios/s6.png" type="image/png" />
+              <img
+                loading="lazy"
+                src="src/img/servicios/s6.webp"
+                alt="Image showing qualified personnel"
+              />
+            </picture>
             <p
               class="service-titulo"
               data-section="services"
@@ -418,12 +444,17 @@
               src="src/img/redes/facebook.svg"
               alt="Icono de facebook"
           /></a>
-          <a href="tel:+526383864621"
-            ><img
-              loading="lazy"
-              src="src/img/redes/tel.png"
-              alt="Icono de telefono"
-          /></a>
+          <a href="tel:+526383864621">
+            <picture>
+              <source src="src/img/redes/tel.avif" type="image/avif" />
+              <source src="src/img/redes/tel.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="src/img/redes/tel.png"
+                alt="Icono de telefono"
+              />
+            </picture>
+          </a>
         </div>
         <!--iconos-redes-->
       </div>
@@ -431,6 +462,5 @@
     <!--footer-->
 
     <script src="js/script.js"></script>
-    <!-- <script src="js/lenaguje.js"></script> -->
   </body>
 </html>
