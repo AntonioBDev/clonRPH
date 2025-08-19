@@ -143,16 +143,19 @@ svg {
 .no-padding {
   padding: 0;
 }
-.btn {
+.btn{
+    cursor: pointer;
+}
+
+.btn, 
+.btn--submit {
   border: 1px solid #000;
   font-size: 2rem;
   padding: 1rem 2rem;
   display: inline-block;
   text-align: center;
-  /* margin: auto 0; */
   font-weight: 800;
   text-transform: uppercase;
-  cursor: pointer;
   border-radius: 1rem;
   border: none;
   font-family: var(--fonts-second);
@@ -227,6 +230,21 @@ svg {
 .c-black {
   color: var(--c-black);
 }
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+
+}
+
+.hidden{
+  display: none;
+}
+
 
 
 /* Video */
@@ -492,7 +510,8 @@ li .active {
   }
 }
 
-.btn-naranjado {
+.btn-naranjado, 
+.btn--naranjado {
   background-color: var(--color-primary);
   color: var(--c-black);
   box-shadow: 8px 5px 5px var(--c-gris);

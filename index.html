@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="icon" type="image/ico" href="src/img/logo/logo1.ico" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/spinner.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -366,6 +367,7 @@
           <div class="fields">
             <div class="field">
               <input
+              id="name"
                 type="text"
                 name="Nombre Completo"
                 placeholder="Nombre completo"
@@ -375,6 +377,7 @@
             </div>
             <div class="field">
               <input
+              id="mail"
                 type="email"
                 name="Correo"
                 placeholder="Correo electronico"
@@ -406,19 +409,30 @@
               type="submit"
               value="Enviar"
               id="to-send"
-              class="btn btn-naranjado"
+              class="btn--submit btn--naranjado opacity-50"
+              disabled
               data-section="form"
               data-value="button"
             />
             <input
               type="hidden"
               name="_next"
-              value="https://magical-kitsune-13fe7b.netlify.app/"
+              value="http://127.0.0.1:5500/index.html"
             />
             <input type="hidden" name="_captcha" value="false" />
           </div>
         </fieldset>
       </form>
+       <div id="spinner" class="hidden justify-center m-tb-3">
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
+        </div>
     </section>
     <!--formulario-->
 
@@ -427,8 +441,6 @@
         <option value="es" data-language="es">🇲🇽 Español</option>
         <option value="en" data-language="en">🇺🇸 English</option>
       </select>
-      <!-- <a href="#" data-language="en"><img src="src/img/lenguaje/en_US.png" alt="Icono US"></a>
-      <a href="#" data-language="es"><img src="src/img/lenguaje/en_MX.png" alt="Icono US"></a> -->
     </div>
     <!--languages-->
 
