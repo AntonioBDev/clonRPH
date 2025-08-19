@@ -275,7 +275,8 @@ video {
   }
 }
 
-/*Header*/
+/* Imagen de fondo sustituido por video */
+/*Header*/ 
 /* .hero {
   background-position: center center;
   background-repeat: no-repeat;
@@ -290,6 +291,12 @@ video {
 
 .hero__bg--color {
   background-color: rgb(0, 0, 0, 0.5);
+}
+
+.content__header{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Logo*/
@@ -425,7 +432,8 @@ li .active {
 .hero__info {
   display: flex;
   flex-direction: column;
-  /* margin-top: .5rem; */
+  height: 100%;
+  justify-content: center;
 }
 
 .info__titulo-index {
@@ -863,19 +871,4 @@ footer {
   font-size: 2rem;
   color: var(--c-gris);
   overflow-wrap: break-word;
-}
-
-
-.content-header{
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-}
-.hero__info{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  /* min-height: 20rem;
-  max-height: 40rem; */
 }
