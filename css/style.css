@@ -763,11 +763,16 @@ fieldset p {
   font-family: var(--fonts-second);
 }
 
-.field input {
-  margin-bottom: 2.5rem;
+.field{
+  margin-top: 2.5rem;
+}
+
+.field:first-child{
+  margin-top: 0;
 }
 
 .field textarea {
+  margin-top: 2.5rem;
   height: 30rem;
 }
 
@@ -890,4 +895,14 @@ footer {
   font-size: 2rem;
   color: var(--c-gris);
   overflow-wrap: break-word;
+}
+
+/* Alerta */
+.alert-red{
+  margin: 1rem 0 0 0;
+  padding: 1rem 2rem;
+  background-color: red;
+  color: var(--c-white);
+  text-align: center;
+  font-size: 2rem;
 }
