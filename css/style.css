@@ -906,3 +906,10 @@ footer {
   text-align: center;
   font-size: 2rem;
 }
+
+/* Icono WhatsApp fijo  */
+.btn-floating{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
